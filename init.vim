@@ -51,4 +51,5 @@ nnoremap <Esc> :noh <CR>
 source ~/.config/nvim/ctrlp.vim
 source ~/.config/nvim/typescript-vim.vim
 source ~/.config/nvim/nerdtree.vim
+source ~/.config/nvim/deoplete.vim
 
