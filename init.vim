@@ -40,11 +40,14 @@ set encoding=utf-8
 
 "show existing tab with 2 spaces width
 set tabstop=2
- " when indenting with '>', use 2 spaces width
+" when indenting with '>', use 2 spaces width
 set shiftwidth=2
- " On pressing tab, insert 2 spaces
+" On pressing tab, insert 2 spaces
 set expandtab
 
 " Unselect text after search
 nnoremap <Esc> :noh <CR>
+
+source ~/.config/nvim/ctrlp.vim
+source ~/.config/nvim/typescript-vim.vim
 
