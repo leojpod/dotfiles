@@ -26,6 +26,7 @@ Plug 'racer-rust/vim-racer'
 Plug 'mustache/vim-mustache-handlebars'
 Plug 'diepm/vim-rest-console'
 Plug 'shime/vim-livedown'
+Plug 'tpope/vim-fugitive'
 
 call plug#end()
 
@@ -54,4 +55,5 @@ source ~/.config/nvim/typescript-vim.vim
 source ~/.config/nvim/nerdtree.vim
 source ~/.config/nvim/deoplete.vim
 source ~/.config/nvim/livedown.vim
+source ~/.config/nvim/ale.vim
 
