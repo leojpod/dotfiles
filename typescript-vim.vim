@@ -1,1 +1,2 @@
-let g:typescript_compiler_options = ''
+" change the typescript compiler so it uses the .tsconfig file
+autocmd FileType typescript :set makeprg=tsc
