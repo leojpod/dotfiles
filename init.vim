@@ -27,6 +27,8 @@ Plug 'mustache/vim-mustache-handlebars'
 Plug 'diepm/vim-rest-console'
 Plug 'shime/vim-livedown'
 Plug 'tpope/vim-fugitive'
+Plug 'jiangmiao/auto-pairs'
+Plug 'Shougo/vimproc.vim', {'do': 'make'}
 
 call plug#end()
 
