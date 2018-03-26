@@ -11,4 +11,5 @@ Optionally:
 
 - install a NERD font to get the proper icon all around vim. 
 - install [livedown](https://github.com/shime/livedown) via ```npm i -g livedown```
+- install neovim bindings for python ```pip3 install neovim```
 

@@ -56,4 +56,5 @@ source ~/.config/nvim/nerdtree.vim
 source ~/.config/nvim/deoplete.vim
 source ~/.config/nvim/livedown.vim
 source ~/.config/nvim/ale.vim
+source ~/.config/nvim/elm.vim
 
