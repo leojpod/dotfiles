@@ -29,6 +29,7 @@ Plug 'shime/vim-livedown'
 Plug 'tpope/vim-fugitive'
 Plug 'jiangmiao/auto-pairs'
 Plug 'Shougo/vimproc.vim', {'do': 'make'}
+Plug 'magarcia/vim-angular2-snippets'
 
 call plug#end()
 
