@@ -1,9 +1,9 @@
-" Register eslint as a fixer for :ALEFix 
+" Register eslint as a fixer for :ALEFix
 let g:ale_fixers = {
-\   'javascript': ['eslint'],
-\   'typescript': ['tslint'],
-\   'handlebars': ['ember-template-lint'],
-\   'elm': ['elm-make', 'elm-format']
+\   'javascript': ['eslint', 'remove_trailing_lines'],
+\   'typescript': ['tslint', 'remove_trailing_lines'],
+\   'handlebars': ['ember-template-lint', 'remove_trailing_lines'],
+\   'elm': ['elm-make', 'elm-format', 'remove_trailing_lines']
 \}
 
 " fix files automatically on save.

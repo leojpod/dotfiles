@@ -53,6 +53,11 @@ set expandtab
 " Unselect text after search
 nnoremap <Esc> :noh <CR>
 
+" highlight trailing whitespace in red so it stands out, http://vim.wikia.com/wiki/Highlight_unwanted_spaces
+highlight ExtraWhitespace ctermbg=darkgreen guibg=lightgreen
+au InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
+au InsertLeave * match ExtraWhitespace /\s\+$/
+
 source ~/.config/nvim/ctrlp.vim
 source ~/.config/nvim/typescript-vim.vim
 source ~/.config/nvim/nerdtree.vim
@@ -61,3 +66,6 @@ source ~/.config/nvim/livedown.vim
 source ~/.config/nvim/ale.vim
 source ~/.config/nvim/elm.vim
 
+if has('gui_macvim')     
+  set syntax=markdown
+endif
