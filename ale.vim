@@ -1,10 +1,11 @@
 " Register eslint as a fixer for :ALEFix
 let g:ale_fixers = {
 \   'vim': ['trim_whitespace'],
+\   'cucumber': ['trim_whitespace'],
 \   'javascript': ['prettier', 'eslint', 'trim_whitespace'],
 \   'typescript': ['prettier', 'tslint', 'trim_whitespace'],
-\   'handlebars': ['ember-template-lint', 'trim_whitespace'],
-\   'elm': ['elm-make', 'elm-format', 'trim_whitespace']
+\   'handlebars': ['trim_whitespace'],
+\   'elm': ['elm-format', 'trim_whitespace']
 \}
 
 " fix files automatically on save.

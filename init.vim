@@ -32,6 +32,7 @@ Plug 'Shougo/vimproc.vim', {'do': 'make'}
 Plug 'magarcia/vim-angular2-snippets'
 Plug 'lifepillar/vim-solarized8'
 Plug 'tpope/vim-cucumber'
+Plug 'scrooloose/nerdcommenter'
 
 call plug#end()
 
@@ -44,7 +45,8 @@ colorscheme solarized8_flat
 syntax on
 set number
 set ruler
-filetype plugin indent on
+" filetype plugin indent on
+filetype plugin on
 
 set encoding=utf-8
 
@@ -76,6 +78,7 @@ source ~/.config/nvim/deoplete.vim
 source ~/.config/nvim/livedown.vim
 source ~/.config/nvim/ale.vim
 source ~/.config/nvim/elm.vim
+source ~/.config/nvim/nerdcommenter.vim
 
 " if has("gui_running")
 "   source ~/.config/nvim/gui.vim
@@ -84,4 +87,7 @@ if !(has("gui_running") || has("gui_vimr"))
   source ~/.config/nvim/nerdtree.vim
   highlight Normal ctermbg=NONE
   highlight nonText ctermbg=NONE
+elseif has("gui_running")
+  source ~/.config/nvim/gui.vim
 endif
+
