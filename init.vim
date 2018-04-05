@@ -33,6 +33,9 @@ Plug 'magarcia/vim-angular2-snippets'
 Plug 'lifepillar/vim-solarized8'
 Plug 'tpope/vim-cucumber'
 Plug 'scrooloose/nerdcommenter'
+Plug 'dkprice/vim-easygrep'
+Plug 'tpope/vim-unimpaired'
+Plug 'brooth/far.vim'
 
 call plug#end()
 
@@ -60,12 +63,20 @@ set expandtab
 " remove trailing whitespace
 " autocmd BufWritePre * %s/\s\+$//e
 
+" easier way to escape
+imap jk <Esc>
+imap kj <Esc>
+imap ii <Esc>
+
 " Unselect text after search
 nnoremap <Esc> :noh <CR>
 
 " Use CMD+K N to go from pane to pane
 nnoremap <c-k>n <c-w>w
 nnoremap <c-k><c-n> <c-w>w
+
+" Use // to search for the visually selected text
+vnoremap // y/\V<c-R>"<CR>
 
 " highlight trailing whitespace in red so it stands out, http://vim.wikia.com/wiki/Highlight_unwanted_spaces
 highlight ExtraWhitespace ctermbg=darkgreen guibg=lightgreen
