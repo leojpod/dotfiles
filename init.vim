@@ -1,3 +1,10 @@
+" ~/.local/share/nvim/site/autoload/plug.vim
+if empty(glob('~/.local/share/nvim/site/autoload/plug.vim'))
+  silent !curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+
 set mouse=a
 
 " specify a directory for plugins
@@ -9,7 +16,9 @@ Plug 'scrooloose/nerdtree'
 Plug 'leafgarland/typescript-vim'
 Plug 'ElmCast/elm-vim'
 Plug 'w0rp/ale'
-Plug 'Shougo/deoplete.nvim'
+if has('nvim')
+  Plug 'Shougo/deoplete.nvim'
+endif
 Plug 'Quramy/vim-js-pretty-template'
 Plug 'airblade/vim-gitgutter'
 Plug 'vim-airline/vim-airline'
@@ -36,6 +45,7 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'dkprice/vim-easygrep'
 Plug 'tpope/vim-unimpaired'
 Plug 'brooth/far.vim'
+Plug 'terryma/vim-multiple-cursors'
 
 call plug#end()
 
@@ -90,6 +100,7 @@ source ~/.config/nvim/livedown.vim
 source ~/.config/nvim/ale.vim
 source ~/.config/nvim/elm.vim
 source ~/.config/nvim/nerdcommenter.vim
+source ~/.config/nvim/multiple-cursors.vim
 
 " if has("gui_running")
 "   source ~/.config/nvim/gui.vim
