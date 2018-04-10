@@ -46,6 +46,7 @@ Plug 'dkprice/vim-easygrep'
 Plug 'tpope/vim-unimpaired'
 Plug 'brooth/far.vim'
 Plug 'terryma/vim-multiple-cursors'
+Plug 'fholgado/minibufexpl.vim'
 
 call plug#end()
 
@@ -101,6 +102,7 @@ source ~/.config/nvim/ale.vim
 source ~/.config/nvim/elm.vim
 source ~/.config/nvim/nerdcommenter.vim
 source ~/.config/nvim/multiple-cursors.vim
+source ~/.config/nvim/minibufexpl.vim
 
 " if has("gui_running")
 "   source ~/.config/nvim/gui.vim
