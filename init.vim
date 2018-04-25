@@ -49,6 +49,7 @@ Plug 'brooth/far.vim'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'fholgado/minibufexpl.vim'
 Plug 'jszakmeister/vim-togglecursor'
+Plug 'mileszs/ack.vim'
 
 call plug#end()
 
@@ -108,6 +109,7 @@ source ~/.config/nvim/multiple-cursors.vim
 source ~/.config/nvim/minibufexpl.vim
 source ~/.config/nvim/tsuquyomi.vim
 source ~/.config/nvim/handlebars.vim
+source ~/.config/nvim/ack.vim
 
 " if has("gui_running")
 "   source ~/.config/nvim/gui.vim
