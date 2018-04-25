@@ -107,6 +107,7 @@ source ~/.config/nvim/nerdcommenter.vim
 source ~/.config/nvim/multiple-cursors.vim
 source ~/.config/nvim/minibufexpl.vim
 source ~/.config/nvim/tsuquyomi.vim
+source ~/.config/nvim/handlebars.vim
 
 " if has("gui_running")
 "   source ~/.config/nvim/gui.vim
