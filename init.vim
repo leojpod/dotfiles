@@ -16,6 +16,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'leafgarland/typescript-vim'
 Plug 'ElmCast/elm-vim'
 Plug 'w0rp/ale'
+Plug 'Quramy/tsuquyomi'
 if has('nvim')
   Plug 'Shougo/deoplete.nvim'
 endif
@@ -37,7 +38,7 @@ Plug 'diepm/vim-rest-console'
 Plug 'shime/vim-livedown'
 Plug 'tpope/vim-fugitive'
 Plug 'jiangmiao/auto-pairs'
-Plug 'Shougo/vimproc.vim', {'do': 'make'}
+" Plug 'Shougo/vimproc.vim', {'do': 'make'}
 Plug 'magarcia/vim-angular2-snippets'
 Plug 'lifepillar/vim-solarized8'
 Plug 'tpope/vim-cucumber'
@@ -47,6 +48,8 @@ Plug 'tpope/vim-unimpaired'
 Plug 'brooth/far.vim'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'fholgado/minibufexpl.vim'
+Plug 'jszakmeister/vim-togglecursor'
+Plug 'mileszs/ack.vim'
 
 call plug#end()
 
@@ -85,6 +88,7 @@ nnoremap <Esc> :noh <CR>
 " Use CMD+K N to go from pane to pane
 nnoremap <c-k>n <c-w>w
 nnoremap <c-k><c-n> <c-w>w
+nnoremap <c-k>N <c-w>W
 
 " Use // to search for the visually selected text
 vnoremap // y/\V<c-R>"<CR>
@@ -103,6 +107,9 @@ source ~/.config/nvim/elm.vim
 source ~/.config/nvim/nerdcommenter.vim
 source ~/.config/nvim/multiple-cursors.vim
 source ~/.config/nvim/minibufexpl.vim
+source ~/.config/nvim/tsuquyomi.vim
+source ~/.config/nvim/handlebars.vim
+source ~/.config/nvim/ack.vim
 
 " if has("gui_running")
 "   source ~/.config/nvim/gui.vim
