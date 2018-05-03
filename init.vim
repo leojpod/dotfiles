@@ -80,7 +80,6 @@ set expandtab
 " easier way to escape
 imap jk <Esc>
 imap kj <Esc>
-imap ii <Esc>
 
 " Unselect text after search
 nnoremap <Esc> :noh <CR>
