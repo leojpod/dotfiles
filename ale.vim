@@ -1,6 +1,7 @@
 " Register eslint as a fixer for :ALEFix
 let g:ale_fixers = {
 \   'vim': ['trim_whitespace'],
+\   'yaml': ['trim_whitespace'],
 \   'cucumber': ['trim_whitespace'],
 \   'javascript': ['prettier', 'eslint', 'trim_whitespace'],
 \   'typescript': ['prettier', 'tslint', 'trim_whitespace'],
