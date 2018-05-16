@@ -50,6 +50,7 @@ Plug 'terryma/vim-multiple-cursors'
 Plug 'fholgado/minibufexpl.vim'
 Plug 'jszakmeister/vim-togglecursor'
 Plug 'mileszs/ack.vim'
+Plug 'vim-latex/vim-latex'
 
 call plug#end()
 
