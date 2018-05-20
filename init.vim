@@ -110,6 +110,7 @@ source ~/.config/nvim/minibufexpl.vim
 source ~/.config/nvim/tsuquyomi.vim
 source ~/.config/nvim/handlebars.vim
 source ~/.config/nvim/ack.vim
+source ~/.config/nvim/latex.vim
 
 " if has("gui_running")
 "   source ~/.config/nvim/gui.vim
