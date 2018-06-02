@@ -51,6 +51,7 @@ Plug 'fholgado/minibufexpl.vim'
 Plug 'jszakmeister/vim-togglecursor'
 Plug 'mileszs/ack.vim'
 Plug 'asturtz2/vim-insert-char', { 'branch': 'append-char' }
+Plug 'vim-latex/vim-latex'
 
 call plug#end()
 
@@ -110,6 +111,7 @@ source ~/.config/nvim/minibufexpl.vim
 source ~/.config/nvim/tsuquyomi.vim
 source ~/.config/nvim/handlebars.vim
 source ~/.config/nvim/ack.vim
+source ~/.config/nvim/latex.vim
 
 " if has("gui_running")
 "   source ~/.config/nvim/gui.vim

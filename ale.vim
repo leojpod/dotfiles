@@ -6,6 +6,7 @@ let g:ale_fixers = {
 \   'javascript': ['prettier', 'eslint', 'trim_whitespace'],
 \   'typescript': ['prettier', 'tslint', 'trim_whitespace'],
 \   'handlebars': ['trim_whitespace'],
+\   'markdown': ['trim_whitespace'],
 \   'elm': ['elm-format', 'trim_whitespace']
 \}
 
