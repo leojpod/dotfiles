@@ -52,6 +52,8 @@ Plug 'jszakmeister/vim-togglecursor'
 Plug 'mileszs/ack.vim'
 Plug 'asturtz2/vim-insert-char', { 'branch': 'append-char' }
 Plug 'vim-latex/vim-latex'
+Plug 'christoomey/vim-tmux-navigator'
+
 
 call plug#end()
 
