@@ -19,6 +19,7 @@ Plug 'w0rp/ale'
 Plug 'Quramy/tsuquyomi'
 if has('nvim')
   Plug 'Shougo/deoplete.nvim'
+  Plug 'pbogut/deoplete-elm'
 endif
 Plug 'Quramy/vim-js-pretty-template'
 Plug 'airblade/vim-gitgutter'
@@ -53,6 +54,8 @@ Plug 'mileszs/ack.vim'
 Plug 'asturtz2/vim-insert-char', { 'branch': 'append-char' }
 Plug 'vim-latex/vim-latex'
 Plug 'christoomey/vim-tmux-navigator'
+Plug 'posva/vim-vue'
+
 
 call plug#end()
 
@@ -113,6 +116,9 @@ source ~/.config/nvim/tsuquyomi.vim
 source ~/.config/nvim/handlebars.vim
 source ~/.config/nvim/ack.vim
 source ~/.config/nvim/latex.vim
+
+autocmd FileType vue syntax sync fromstart
+
 
 " if has("gui_running")
 "   source ~/.config/nvim/gui.vim
