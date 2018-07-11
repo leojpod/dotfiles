@@ -24,5 +24,5 @@ let g:ale_lint_on_text_changed = 'never'
 " Enable completion where available.
 let g:ale_completion_enabled = 1
 
-nmap <silent> <C-k> <Plug>(ale_previous_wrap)
-nmap <silent> <C-j> <Plug>(ale_next_wrap)
+nmap <silent> <C-E> <Plug>(ale_previous_wrap)
+nmap <silent> <C-e> <Plug>(ale_next_wrap)
