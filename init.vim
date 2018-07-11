@@ -16,7 +16,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'leafgarland/typescript-vim'
 Plug 'ElmCast/elm-vim'
 Plug 'w0rp/ale'
-Plug 'Quramy/tsuquyomi'
+Plug 'jason0x43/vim-tss', { 'for': [ 'typescript', 'javascript' ], 'do': 'npm install' }
 if has('nvim')
   Plug 'Shougo/deoplete.nvim'
   Plug 'pbogut/deoplete-elm'
