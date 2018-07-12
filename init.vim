@@ -55,7 +55,8 @@ Plug 'asturtz2/vim-insert-char', { 'branch': 'append-char' }
 Plug 'vim-latex/vim-latex'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'posva/vim-vue'
-
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
 
 call plug#end()
 
