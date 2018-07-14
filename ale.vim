@@ -4,7 +4,7 @@ let g:ale_fixers = {
 \   'yaml': ['trim_whitespace'],
 \   'cucumber': ['trim_whitespace'],
 \   'javascript': ['prettier', 'eslint', 'trim_whitespace'],
-\   'typescript': ['prettier', 'tslint', 'trim_whitespace'],
+\   'typescript': ['tslint', 'trim_whitespace'],
 \   'handlebars': ['trim_whitespace'],
 \   'markdown': ['trim_whitespace'],
 \   'elm': ['elm-format', 'trim_whitespace']
