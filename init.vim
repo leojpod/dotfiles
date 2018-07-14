@@ -57,6 +57,8 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'posva/vim-vue'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
+Plug 'Alok/notational-fzf-vim'
+
 
 call plug#end()
 
@@ -117,6 +119,7 @@ source ~/.config/nvim/tsuquyomi.vim
 source ~/.config/nvim/handlebars.vim
 source ~/.config/nvim/ack.vim
 source ~/.config/nvim/latex.vim
+source ~/.config/nvim/notational.vim
 
 autocmd FileType vue syntax sync fromstart
 
