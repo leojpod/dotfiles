@@ -93,14 +93,6 @@ set expandtab
 imap jk <Esc>
 imap kj <Esc>
 
-" Unselect text after search
-nnoremap <Esc> :noh <CR>
-
-" Use CMD+K N to go from pane to pane
-nnoremap <c-k>n <c-w>w
-nnoremap <c-k><c-n> <c-w>w
-nnoremap <c-k>N <c-w>W
-
 " Use // to search for the visually selected text
 vnoremap // y/\V<c-R>"<CR>
 
@@ -118,7 +110,7 @@ source ~/.config/nvim/elm.vim
 source ~/.config/nvim/nerdcommenter.vim
 source ~/.config/nvim/multiple-cursors.vim
 source ~/.config/nvim/minibufexpl.vim
-source ~/.config/nvim/tsuquyomi.vim
+" source ~/.config/nvim/tsuquyomi.vim
 source ~/.config/nvim/handlebars.vim
 source ~/.config/nvim/ack.vim
 source ~/.config/nvim/latex.vim
