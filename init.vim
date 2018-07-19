@@ -77,7 +77,7 @@ filetype plugin on
 set encoding=utf-8
 
 " setup spellcheck
-set spell spelllang=en_gb
+au BufRead,BufNewFile *.md setlocal spell spelllang=en_gb
 
 "show existing tab with 2 spaces width
 set tabstop=2
