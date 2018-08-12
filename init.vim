@@ -96,6 +96,9 @@ imap kj <Esc>
 " Use // to search for the visually selected text
 vnoremap // y/\V<c-R>"<CR>
 
+" Unselect text after search
+nnoremap <Esc> :noh <CR>
+
 " highlight trailing whitespace in red so it stands out, http://vim.wikia.com/wiki/Highlight_unwanted_spaces
 highlight ExtraWhitespace ctermbg=darkgreen guibg=lightgreen
 au InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
