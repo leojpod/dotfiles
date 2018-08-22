@@ -58,6 +58,7 @@ Plug 'posva/vim-vue'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'Alok/notational-fzf-vim'
+Plug 'nikvdp/ejs-syntax'
 
 
 call plug#end()
