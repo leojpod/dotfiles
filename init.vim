@@ -86,6 +86,8 @@ set tabstop=2
 set shiftwidth=2
 " On pressing tab, insert 2 spaces
 set expandtab
+" Automatically reload change files on disk
+set autoread
 
 " remove trailing whitespace
 " autocmd BufWritePre * %s/\s\+$//e
