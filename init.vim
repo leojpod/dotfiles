@@ -35,7 +35,6 @@ Plug 'Shougo/denite.nvim'
 Plug 'rust-lang/rust.vim'
 Plug 'racer-rust/vim-racer'
 Plug 'mustache/vim-mustache-handlebars'
-Plug 'diepm/vim-rest-console'
 Plug 'shime/vim-livedown'
 Plug 'tpope/vim-fugitive'
 Plug 'jiangmiao/auto-pairs'
@@ -59,6 +58,7 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'Alok/notational-fzf-vim'
 Plug 'nikvdp/ejs-syntax'
+Plug 'diepm/vim-rest-console'
 
 
 call plug#end()
@@ -121,6 +121,7 @@ source ~/.config/nvim/handlebars.vim
 source ~/.config/nvim/ack.vim
 source ~/.config/nvim/latex.vim
 source ~/.config/nvim/notational.vim
+source ~/.config/nvim/rest-console.vim
 
 autocmd FileType vue syntax sync fromstart
 
