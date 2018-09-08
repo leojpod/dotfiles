@@ -9,7 +9,8 @@ let g:ale_fixers = {
 \   'typescript': ['tslint', 'trim_whitespace'],
 \   'handlebars': ['trim_whitespace'],
 \   'markdown': ['trim_whitespace'],
-\   'elm': ['elm-format', 'trim_whitespace']
+\   'elm': ['elm-format', 'trim_whitespace'],
+\   'haskell': ['hlint', 'trim_whitespace']
 \}
 
 " fix files automatically on save.

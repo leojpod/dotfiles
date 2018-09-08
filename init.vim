@@ -59,6 +59,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'Alok/notational-fzf-vim'
 Plug 'nikvdp/ejs-syntax'
 Plug 'diepm/vim-rest-console'
+Plug 'neovimhaskell/haskell-vim'
 
 
 call plug#end()
