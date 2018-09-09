@@ -60,6 +60,9 @@ Plug 'Alok/notational-fzf-vim'
 Plug 'nikvdp/ejs-syntax'
 Plug 'diepm/vim-rest-console'
 Plug 'neovimhaskell/haskell-vim'
+" Plug 'alx741/vim-hindent', { 'do': 'stack install hindent' }
+Plug 'nbouscal/vim-stylish-haskell', { 'do': 'stack install stylish-haskell' }
+Plug 'dan-t/vim-hsimport'
 
 
 call plug#end()
@@ -123,6 +126,7 @@ source ~/.config/nvim/ack.vim
 source ~/.config/nvim/latex.vim
 source ~/.config/nvim/notational.vim
 source ~/.config/nvim/rest-console.vim
+source ~/.config/nvim/haskell.vim
 
 autocmd FileType vue syntax sync fromstart
 
