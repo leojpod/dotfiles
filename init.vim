@@ -32,7 +32,7 @@ Plug 'ctrlpvim/ctrlp.vim'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'ryanoasis/vim-devicons'
 Plug 'Shougo/denite.nvim'
-Plug 'rust-lang/rust.vim'
+Plug 'rust-lang/rust.vim', {'do': 'rustup component add rustfmt-preview --toolchain nightly'}
 Plug 'racer-rust/vim-racer', {'do': 'cargo +nightly install racer'}
 Plug 'mustache/vim-mustache-handlebars'
 Plug 'shime/vim-livedown'
@@ -117,6 +117,7 @@ source ~/.config/nvim/deoplete.vim
 source ~/.config/nvim/livedown.vim
 source ~/.config/nvim/ale.vim
 source ~/.config/nvim/elm.vim
+source ~/.config/nvim/rust.vim
 source ~/.config/nvim/nerdcommenter.vim
 source ~/.config/nvim/multiple-cursors.vim
 source ~/.config/nvim/minibufexpl.vim
