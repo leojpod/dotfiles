@@ -33,7 +33,7 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'ryanoasis/vim-devicons'
 Plug 'Shougo/denite.nvim'
 Plug 'rust-lang/rust.vim'
-Plug 'racer-rust/vim-racer'
+Plug 'racer-rust/vim-racer', {'do': 'cargo +nightly install racer'}
 Plug 'mustache/vim-mustache-handlebars'
 Plug 'shime/vim-livedown'
 Plug 'tpope/vim-fugitive'
