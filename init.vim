@@ -1,5 +1,5 @@
 " ~/.local/share/nvim/site/autoload/plug.vim
-if empty(glob('~/.local/share/nvim/site/autoload/plug.vim'))
+if empty(glob('~/.local/share/nvim/site/autoload/plug.vim')) " Auto install Plug if it's not there
   silent !curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs
     \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
   autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
@@ -12,57 +12,94 @@ set mouse=a
 " - Avoid using standard Vim directory names like 'plugin'
 call plug#begin('~/.vim/plugged')
 
-Plug 'scrooloose/nerdtree'
-Plug 'leafgarland/typescript-vim'
-Plug 'ElmCast/elm-vim'
-Plug 'w0rp/ale'
-Plug 'jason0x43/vim-tss', { 'for': [ 'typescript' ], 'do': 'npm install' }
+" IDE style and general tools
+Plug 'scrooloose/nerdtree' " Fancy file Tree on the side
+Plug 'Xuyuanp/nerdtree-git-plugin' " Show Git's status of files in the file tree
+Plug 'vim-airline/vim-airline' " Fancy status line at the bottom
+Plug 'ctrlpvim/ctrlp.vim' " Fancy file finder via <C+P>
+Plug 'ryanoasis/vim-devicons' " Fancy 'icons' everywhere in the editor
+Plug 'Shougo/denite.nvim' " Black magic asynchronous support for nvim
+Plug 'lifepillar/vim-solarized8' " Color Theme
+Plug 'tpope/vim-unimpaired' " general set of options
+Plug 'fholgado/minibufexpl.vim' " quickly see and close buffers
+Plug 'christoomey/vim-tmux-navigator' " tmux integration (works with byobu if tmux is the engine used there
+Plug 'jszakmeister/vim-togglecursor' " supposedy allow to change the shape of the cursor in vim, doesn't work on Kitty within byobu ...
+Plug 'mileszs/ack.vim' " Quick search with Ack or Ag, I used far instead often ...
+Plug 'dkprice/vim-easygrep' " search and replace option that I should use more often
+Plug 'brooth/far.vim' " Find and Replace, does more or less the same as vim-easygrep, I should really keep only one of them ...
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' } " fuzzy finder support
+Plug 'junegunn/fzf.vim' " fuzzy finder with more options (built on top of fzf)
+
+" general coding things:
+Plug 'w0rp/ale' " Linter and Fixer
 if has('nvim')
-  Plug 'Shougo/deoplete.nvim'
+  Plug 'Shougo/deoplete.nvim' " Auto-complete
+endif
+Plug 'airblade/vim-gitgutter' " Git diff next to the line number
+Plug 'tpope/vim-fugitive' " Git support
+Plug 'nathanaelkane/vim-indent-guides' " Indent guidelines
+Plug 'editorconfig/editorconfig-vim' " Support for .editorconfig
+Plug 'jiangmiao/auto-pairs' " what is says on the tin
+Plug 'scrooloose/nerdcommenter' " Simple stuff to (un)comment lines and block quickly
+Plug 'terryma/vim-multiple-cursors' " quickly refactor within a file, or other multiple-cursors usefulness
+Plug 'asturtz2/vim-insert-char', { 'branch': 'append-char' } " quicker way to add a single char without jumping in the insert mode and export
+Plug 'nikvdp/ejs-syntax' " Don't remember why this one is there
+
+" Language specific stuff
+
+"" - JavaScript:
+Plug 'Quramy/vim-js-pretty-template'
+Plug 'isruslan/vim-es6'
+
+"" - TypeScript :
+Plug 'leafgarland/typescript-vim'
+Plug 'jason0x43/vim-tss', { 'for': [ 'typescript' ], 'do': 'npm install' }
+
+"" - Ember:
+Plug 'joukevandermaas/vim-ember-hbs'
+Plug 'mustache/vim-mustache-handlebars'
+
+"" - Vue.js:
+Plug 'posva/vim-vue'
+
+"" - Angular:
+" Plug 'magarcia/vim-angular2-snippets' " Just kidding
+
+"" - Elm:
+Plug 'ElmCast/elm-vim'
+if has('nvim')
   Plug 'pbogut/deoplete-elm'
 endif
-Plug 'Quramy/vim-js-pretty-template'
-Plug 'airblade/vim-gitgutter'
-Plug 'vim-airline/vim-airline'
-Plug 'nathanaelkane/vim-indent-guides'
-Plug 'joukevandermaas/vim-ember-hbs'
-Plug 'isruslan/vim-es6'
-Plug 'editorconfig/editorconfig-vim'
-Plug 'ctrlpvim/ctrlp.vim'
-Plug 'Xuyuanp/nerdtree-git-plugin'
-Plug 'ryanoasis/vim-devicons'
-Plug 'Shougo/denite.nvim'
-Plug 'rust-lang/rust.vim', {'do': 'rustup component add rustfmt-preview --toolchain nightly'}
-Plug 'racer-rust/vim-racer', {'do': 'cargo +nightly install racer'}
-Plug 'mustache/vim-mustache-handlebars'
-Plug 'shime/vim-livedown'
-Plug 'tpope/vim-fugitive'
-Plug 'jiangmiao/auto-pairs'
-" Plug 'Shougo/vimproc.vim', {'do': 'make'}
-Plug 'magarcia/vim-angular2-snippets'
-Plug 'lifepillar/vim-solarized8'
-Plug 'tpope/vim-cucumber'
-Plug 'scrooloose/nerdcommenter'
-Plug 'dkprice/vim-easygrep'
-Plug 'tpope/vim-unimpaired'
-Plug 'brooth/far.vim'
-Plug 'terryma/vim-multiple-cursors'
-Plug 'fholgado/minibufexpl.vim'
-Plug 'jszakmeister/vim-togglecursor'
-Plug 'mileszs/ack.vim'
-Plug 'asturtz2/vim-insert-char', { 'branch': 'append-char' }
-Plug 'vim-latex/vim-latex'
-Plug 'christoomey/vim-tmux-navigator'
-Plug 'posva/vim-vue'
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-Plug 'junegunn/fzf.vim'
-Plug 'Alok/notational-fzf-vim'
-Plug 'nikvdp/ejs-syntax'
-Plug 'diepm/vim-rest-console'
+
+"" - Haskell:
 Plug 'neovimhaskell/haskell-vim'
-" Plug 'alx741/vim-hindent', { 'do': 'stack install hindent' }
 Plug 'nbouscal/vim-stylish-haskell', { 'do': 'stack install stylish-haskell' }
 Plug 'dan-t/vim-hsimport'
+
+"" - Rust:
+Plug 'rust-lang/rust.vim', {'do': 'rustup component add rustfmt-preview --toolchain nightly'}
+Plug 'racer-rust/vim-racer', {'do': 'cargo +nightly install racer'}
+
+"" - Cucumber files:
+Plug 'tpope/vim-cucumber'
+
+"" - Latex:
+Plug 'vim-latex/vim-latex'
+
+
+"" - Markdown:
+Plug 'Alok/notational-fzf-vim'
+Plug 'reedes/vim-pencil'       " Super powered writing things
+Plug 'junegunn/limelight.vim'  " Highlights only active paragraph
+Plug 'reedes/vim-lexical'      " Lexicographical errors
+Plug 'reedes/vim-litecorrect'  " Better autocorrections
+Plug 'junegunn/goyo.vim'       " Spacing
+Plug 'godlygeek/tabular'       " Crate tables
+Plug 'plasticboy/vim-markdown' " Markdown
+
+"" - Rest:
+Plug 'diepm/vim-rest-console'
+
 
 
 call plug#end()
@@ -76,13 +113,10 @@ colorscheme solarized8_flat
 syntax on
 set number
 set ruler
-" filetype plugin indent on
 filetype plugin on
 
 set encoding=utf-8
 
-" setup spellcheck
-au BufRead,BufNewFile *.md setlocal spell spelllang=en_gb
 
 "show existing tab with 2 spaces width
 set tabstop=2
@@ -93,10 +127,8 @@ set expandtab
 " Automatically reload change files on disk
 set autoread
 
-" remove trailing whitespace
-" autocmd BufWritePre * %s/\s\+$//e
-
 " easier way to escape
+" This is the best thing in my config IMO
 imap jk <Esc>
 imap kj <Esc>
 
@@ -111,35 +143,53 @@ highlight ExtraWhitespace ctermbg=darkgreen guibg=lightgreen
 au InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
 au InsertLeave * match ExtraWhitespace /\s\+$/
 
-source ~/.config/nvim/ctrlp.vim
-source ~/.config/nvim/typescript-vim.vim
-source ~/.config/nvim/deoplete.vim
-source ~/.config/nvim/livedown.vim
-source ~/.config/nvim/ale.vim
-source ~/.config/nvim/elm.vim
-source ~/.config/nvim/rust.vim
-source ~/.config/nvim/nerdcommenter.vim
-source ~/.config/nvim/multiple-cursors.vim
-source ~/.config/nvim/minibufexpl.vim
-" source ~/.config/nvim/tsuquyomi.vim
-source ~/.config/nvim/handlebars.vim
-source ~/.config/nvim/ack.vim
-source ~/.config/nvim/latex.vim
-source ~/.config/nvim/notational.vim
-source ~/.config/nvim/rest-console.vim
-source ~/.config/nvim/haskell.vim
-
-autocmd FileType vue syntax sync fromstart
-
-
-" if has("gui_running")
-"   source ~/.config/nvim/gui.vim
-" endif
+" IDE style and general tools
+source ~/.config/nvim/configs/tools/ctrlp.vim
 if !(has("gui_running") || has("gui_vimr"))
-  source ~/.config/nvim/nerdtree.vim
+  source ~/.config/nvim/configs/tools/nerdtree.vim
   highlight Normal ctermbg=NONE
   highlight nonText ctermbg=NONE
 elseif has("gui_running")
-  source ~/.config/nvim/gui.vim
+  source ~/.config/nvim/configs/tools/gui.vim
 endif
+
+
+" general coding things:
+source ~/.config/nvim/configs/tools/ale.vim
+source ~/.config/nvim/configs/tools/deoplete.vim
+source ~/.config/nvim/configs/tools/nerdcommenter.vim
+source ~/.config/nvim/configs/tools/multiple-cursors.vim
+source ~/.config/nvim/configs/tools/minibufexpl.vim
+source ~/.config/nvim/configs/tools/ack.vim
+
+" Language specific stuff
+
+"" - JavaScript:
+
+"" - TypeScript :
+source ~/.config/nvim/configs/languages/typescript.vim
+
+"" - Ember:
+source ~/.config/nvim/configs/languages/handlebars.vim
+
+"" - Vue.js:
+autocmd FileType vue syntax sync fromstart
+
+"" - Elm:
+source ~/.config/nvim/configs/languages/elm.vim
+
+"" - Haskell
+source ~/.config/nvim/configs/languages/haskell.vim
+
+"" - Rust:
+source ~/.config/nvim/configs/languages/rust.vim
+
+"" - Latex:
+source ~/.config/nvim/configs/languages/latex.vim
+
+"" - Markdown:
+source ~/.config/nvim/configs/languages/notational.vim
+
+"" - Rest:
+source ~/.config/nvim/configs/languages/rest-console.vim
 
