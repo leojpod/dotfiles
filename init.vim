@@ -29,6 +29,10 @@ Plug 'dkprice/vim-easygrep' " search and replace option that I should use more o
 Plug 'brooth/far.vim' " Find and Replace, does more or less the same as vim-easygrep, I should really keep only one of them ...
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' } " fuzzy finder support
 Plug 'junegunn/fzf.vim' " fuzzy finder with more options (built on top of fzf)
+Plug 'reedes/vim-pencil'       " Super powered writing things
+Plug 'reedes/vim-lexical'      " Lexicographical errors
+Plug 'reedes/vim-litecorrect'  " Better autocorrections
+Plug 'godlygeek/tabular'       " Crate tables
 
 " general coding things:
 Plug 'w0rp/ale' " Linter and Fixer
@@ -44,6 +48,8 @@ Plug 'scrooloose/nerdcommenter' " Simple stuff to (un)comment lines and block qu
 Plug 'terryma/vim-multiple-cursors' " quickly refactor within a file, or other multiple-cursors usefulness
 Plug 'asturtz2/vim-insert-char', { 'branch': 'append-char' } " quicker way to add a single char without jumping in the insert mode and export
 Plug 'nikvdp/ejs-syntax' " Don't remember why this one is there
+Plug 'junegunn/goyo.vim'
+Plug 'junegunn/limelight.vim'
 
 " Language specific stuff
 
