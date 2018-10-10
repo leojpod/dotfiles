@@ -22,17 +22,13 @@ Plug 'Shougo/denite.nvim' " Black magic asynchronous support for nvim
 Plug 'lifepillar/vim-solarized8' " Color Theme
 Plug 'tpope/vim-unimpaired' " general set of options
 Plug 'fholgado/minibufexpl.vim' " quickly see and close buffers
-Plug 'christoomey/vim-tmux-navigator' " tmux integration (works with byobu if tmux is the engine used there
 Plug 'jszakmeister/vim-togglecursor' " supposedy allow to change the shape of the cursor in vim, doesn't work on Kitty within byobu ...
 Plug 'mileszs/ack.vim' " Quick search with Ack or Ag, I used far instead often ...
 Plug 'dkprice/vim-easygrep' " search and replace option that I should use more often
 Plug 'brooth/far.vim' " Find and Replace, does more or less the same as vim-easygrep, I should really keep only one of them ...
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' } " fuzzy finder support
 Plug 'junegunn/fzf.vim' " fuzzy finder with more options (built on top of fzf)
-Plug 'reedes/vim-pencil'       " Super powered writing things
-Plug 'reedes/vim-lexical'      " Lexicographical errors
-Plug 'reedes/vim-litecorrect'  " Better autocorrections
-Plug 'godlygeek/tabular'       " Crate tables
+Plug 'christoomey/vim-tmux-navigator' " tmux integration (works with byobu if tmux is the engine used there
 
 " general coding things:
 Plug 'w0rp/ale' " Linter and Fixer
@@ -47,8 +43,6 @@ Plug 'jiangmiao/auto-pairs' " what is says on the tin
 Plug 'scrooloose/nerdcommenter' " Simple stuff to (un)comment lines and block quickly
 Plug 'terryma/vim-multiple-cursors' " quickly refactor within a file, or other multiple-cursors usefulness
 Plug 'asturtz2/vim-insert-char', { 'branch': 'append-char' } " quicker way to add a single char without jumping in the insert mode and export
-Plug 'nikvdp/ejs-syntax' " Don't remember why this one is there
-Plug 'junegunn/goyo.vim'
 Plug 'junegunn/limelight.vim'
 
 " Language specific stuff
@@ -88,10 +82,6 @@ Plug 'racer-rust/vim-racer', {'do': 'cargo +nightly install racer'}
 
 "" - Cucumber files:
 Plug 'tpope/vim-cucumber'
-
-"" - Latex:
-Plug 'vim-latex/vim-latex'
-
 
 "" - Markdown:
 Plug 'Alok/notational-fzf-vim'
@@ -159,7 +149,6 @@ elseif has("gui_running")
   source ~/.config/nvim/configs/tools/gui.vim
 endif
 
-
 " general coding things:
 source ~/.config/nvim/configs/tools/ale.vim
 source ~/.config/nvim/configs/tools/deoplete.vim
@@ -189,9 +178,6 @@ source ~/.config/nvim/configs/languages/haskell.vim
 
 "" - Rust:
 source ~/.config/nvim/configs/languages/rust.vim
-
-"" - Latex:
-source ~/.config/nvim/configs/languages/latex.vim
 
 "" - Markdown:
 source ~/.config/nvim/configs/languages/notational.vim
