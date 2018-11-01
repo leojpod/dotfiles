@@ -13,6 +13,9 @@ let g:ale_fixers = {
 \   'haskell': ['hlint', 'trim_whitespace']
 \}
 
+" Custom
+let g:ale_linters = {'rust': ['rls', 'cargo']}
+
 " fix files automatically on save.
 " This is off by default.
 let g:ale_fix_on_save = 1

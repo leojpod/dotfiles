@@ -78,7 +78,9 @@ Plug 'dan-t/vim-hsimport'
 
 "" - Rust:
 Plug 'rust-lang/rust.vim', {'do': 'rustup component add rustfmt-preview --toolchain nightly'}
-Plug 'racer-rust/vim-racer', {'do': 'cargo +nightly install racer'}
+" Plug 'racer-rust/vim-racer', {'do': 'cargo +nightly install racer'}
+Plug 'sebastianmarkow/deoplete-rust'
+
 
 "" - Cucumber files:
 Plug 'tpope/vim-cucumber'
