@@ -70,6 +70,7 @@ Plug 'ElmCast/elm-vim'
 if has('nvim')
   Plug 'pbogut/deoplete-elm'
 endif
+Plug 'kbsymanz/ctags-elm'
 
 "" - Haskell:
 Plug 'neovimhaskell/haskell-vim'
