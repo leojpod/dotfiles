@@ -29,12 +29,11 @@ Plug 'brooth/far.vim' " Find and Replace, does more or less the same as vim-easy
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' } " fuzzy finder support
 Plug 'junegunn/fzf.vim' " fuzzy finder with more options (built on top of fzf)
 Plug 'christoomey/vim-tmux-navigator' " tmux integration (works with byobu if tmux is the engine used there
+Plug 'Shougo/vimproc.vim', {'do': 'make'} " apparently still required for some plugins ...
 
-" general coding things:
+" general coding things
 Plug 'w0rp/ale' " Linter and Fixer
-if has('nvim')
-  Plug 'Shougo/deoplete.nvim' " Auto-complete
-endif
+Plug 'Shougo/deoplete.nvim' " Auto-complete
 Plug 'airblade/vim-gitgutter' " Git diff next to the line number
 Plug 'tpope/vim-fugitive' " Git support
 Plug 'nathanaelkane/vim-indent-guides' " Indent guidelines
@@ -52,8 +51,9 @@ Plug 'Quramy/vim-js-pretty-template'
 Plug 'isruslan/vim-es6'
 
 "" - TypeScript :
+Plug 'Quramy/tsuquyomi'
+Plug 'rudism/deoplete-tsuquyomi'
 Plug 'leafgarland/typescript-vim'
-Plug 'jason0x43/vim-tss', { 'for': [ 'typescript' ], 'do': 'npm install' }
 
 "" - Ember:
 Plug 'joukevandermaas/vim-ember-hbs'
@@ -67,9 +67,7 @@ Plug 'posva/vim-vue'
 
 "" - Elm:
 Plug 'ElmCast/elm-vim'
-if has('nvim')
-  Plug 'pbogut/deoplete-elm'
-endif
+Plug 'pbogut/deoplete-elm'
 Plug 'kbsymanz/ctags-elm'
 
 "" - Haskell:
