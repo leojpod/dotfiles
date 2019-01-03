@@ -1,0 +1,26 @@
+[commit]
+	gpgsign = true
+[user]
+	email = leo.jpod@lilo.org
+	name = Leo jPod
+[core]
+	editor = nvim
+[alias]
+  st = status -sb
+  lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %Cblue<%an>%Creset' --abbrev-commit --date=relative --all
+  psc = !sh -c \"git push origin $(git rev-parse --abbrev-ref HEAD)\"
+  pscf = !sh -c \"git push origin $(git rev-parse --abbrev-ref HEAD) --force\"
+  plc = !sh -c \"git pull origin $(git rev-parse --abbrev-ref HEAD)\"
+  plo = !sh -c \"git pull origin \"
+  plcr = !sh -c \"git pull --rebase origin $(git rev-parse --abbrev-ref HEAD)\"
+  plr = !sh -c \"git pull --rebase \"
+  di = diff
+  ci = commit
+  co = checkout
+  br = branch
+  llog = log --date=local
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
