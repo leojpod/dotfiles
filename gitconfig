@@ -3,6 +3,7 @@
 [user]
 	email = leo.jpod@lilo.org
 	name = Leo jPod
+	signingkey = C7F6D47D5A5F5213
 [core]
 	editor = nvim
 [alias]
