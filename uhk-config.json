@@ -23,7 +23,7 @@
       "isDefault": true,
       "abbreviation": "RWD",
       "name": "Please return me",
-      "description": "QWERTY is the mother of all layouts. This is the PC version.",
+      "description": "If you find my keyboard, please return it :)",
       "layers": [
         {
           "modules": [
@@ -1968,11 +1968,11 @@
                 null,
                 {
                   "keyActionType": "mouse",
-                  "mouseAction": "scrollDown"
+                  "mouseAction": "scrollUp"
                 },
                 {
                   "keyActionType": "mouse",
-                  "mouseAction": "scrollUp"
+                  "mouseAction": "scrollDown"
                 },
                 {
                   "keyActionType": "mouse",
