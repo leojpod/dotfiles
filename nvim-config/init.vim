@@ -97,7 +97,9 @@ Plug 'plasticboy/vim-markdown' " Markdown
 "" - Rest:
 Plug 'diepm/vim-rest-console'
 
-
+"" - PSQL:
+Plug 'lifepillar/pgsql.vim'
+Plug 'vim-scripts/dbext.vim'
 
 call plug#end()
 
