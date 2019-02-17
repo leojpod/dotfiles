@@ -66,9 +66,10 @@ Plug 'posva/vim-vue'
 " Plug 'magarcia/vim-angular2-snippets' " Just kidding
 
 "" - Elm:
-Plug 'ElmCast/elm-vim'
+Plug 'ElmCast/elm-vim', { 'do': 'npm i -g elm; npm i -g elm-test; npm i -g elm-oracle; npm i -g elm-format' }
 Plug 'pbogut/deoplete-elm'
 Plug 'kbsymanz/ctags-elm'
+Plug 'antew/vim-elm-analyse', { 'do': 'npm i -g elm-analyse' }
 
 "" - Haskell:
 Plug 'neovimhaskell/haskell-vim'
