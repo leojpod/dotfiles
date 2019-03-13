@@ -105,6 +105,10 @@ Plug 'vim-scripts/dbext.vim'
 "" - Prolog:
 Plug 'adimit/prolog.vim'
 
+"" - Latex:
+Plug 'lervag/vimtex'
+
+
 call plug#end()
 
 " solarized theme config

@@ -3,12 +3,13 @@ let g:ale_fixers = {
 \   'vim': ['trim_whitespace'],
 \   'yaml': ['trim_whitespace'],
 \   'cucumber': ['trim_whitespace'],
-\   'javascript': ['prettier', 'eslint', 'trim_whitespace'],
+\   'javascript': ['prettier', 'standard', 'trim_whitespace'],
 \   'scss': ['prettier', 'trim_whitespace'],
 \   'css': ['prettier', 'trim_whitespace'],
 \   'typescript': ['prettier', 'tslint', 'trim_whitespace'],
 \   'handlebars': ['trim_whitespace'],
 \   'markdown': ['trim_whitespace'],
+\   'tex': ['trim_whitespace'],
 \   'elm': ['elm-format', 'trim_whitespace'],
 \   'haskell': ['hlint', 'trim_whitespace']
 \}
