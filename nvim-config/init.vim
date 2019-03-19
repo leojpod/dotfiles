@@ -187,6 +187,9 @@ source ~/.config/nvim/configs/languages/elm.vim
 "" - Haskell
 source ~/.config/nvim/configs/languages/haskell.vim
 
+"" - Latex
+source ~/.config/nvim/configs/languages/latex.vim
+
 "" - Rust:
 source ~/.config/nvim/configs/languages/rust.vim
 
