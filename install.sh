@@ -11,7 +11,12 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 
 # install tmux
 brew install tmux
-# install tpm
+
+# install pinentry
+brew install pinentry
+
+# make sure we can sign with gpg
+export GPG_TTY=$(tty)
 
 ## TODO check if we're on a mac or not
 # thefuck
