@@ -66,3 +66,6 @@ npm i -g neovim
 # setup nvim directly
 nvim +PlugInstall +UpdateRemotePlugins +qa
 
+
+# at last run the setup to make sure all configs are linked properly
+./setup.sh
