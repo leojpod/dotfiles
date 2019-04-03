@@ -16,7 +16,6 @@ plugins=(
   docker-compose
   nvm
   brew
-  zsh-vim-mode
   history-substring-search
 )
 
