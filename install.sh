@@ -12,6 +12,9 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 # install tmux
 brew install tmux
 
+# install tpm
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+
 # install pinentry
 brew install pinentry
 
@@ -21,7 +24,6 @@ export GPG_TTY=$(tty)
 ## TODO check if we're on a mac or not
 # thefuck
 brew install thefuck
-git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 
 ## TODO check if we're on a mac or not
