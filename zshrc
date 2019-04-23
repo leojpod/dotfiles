@@ -84,3 +84,6 @@ if [ -f '/Users/leojeusset/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/leoj
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/leojeusset/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/leojeusset/google-cloud-sdk/completion.zsh.inc'; fi
+
+# rust stuff
+export PATH="$PATH:$HOME/.cargo/bin"
