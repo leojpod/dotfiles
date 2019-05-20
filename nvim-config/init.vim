@@ -44,7 +44,6 @@ Plug 'terryma/vim-multiple-cursors' " quickly refactor within a file, or other m
 Plug 'asturtz2/vim-insert-char', { 'branch': 'append-char' } " quicker way to add a single char without jumping in the insert mode and export
 Plug 'junegunn/limelight.vim'
 Plug 'ap/vim-css-color'
-Plug 'airblade/vim-rooter'
 
 " Language specific stuff
 
