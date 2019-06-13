@@ -71,6 +71,8 @@ Plug 'ElmCast/elm-vim', { 'do': 'npm i -g elm; npm i -g elm-test; npm i -g elm-o
 Plug 'pbogut/deoplete-elm'
 Plug 'kbsymanz/ctags-elm'
 Plug 'antew/vim-elm-analyse', { 'do': 'npm i -g elm-analyse' }
+Plug 'antew/vim-elm-language-server'
+
 
 "" - Haskell:
 Plug 'neovimhaskell/haskell-vim'
