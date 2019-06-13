@@ -109,6 +109,8 @@ Plug 'adimit/prolog.vim'
 "" - Latex:
 Plug 'lervag/vimtex'
 
+"" - openSCAD:
+Plug 'vim-scripts/openscad.vim'
 
 call plug#end()
 
