@@ -169,6 +169,7 @@ endif
 " general coding things:
 source ~/.config/nvim/configs/tools/ale.vim
 " source ~/.config/nvim/configs/tools/deoplete.vim
+source ~/.config/nvim/configs/tools/coc.vim
 source ~/.config/nvim/configs/tools/nerdcommenter.vim
 source ~/.config/nvim/configs/tools/multiple-cursors.vim
 source ~/.config/nvim/configs/tools/minibufexpl.vim
