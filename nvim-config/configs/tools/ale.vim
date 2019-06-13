@@ -4,6 +4,7 @@ let g:ale_fixers = {
 \   'yaml': ['trim_whitespace'],
 \   'cucumber': ['trim_whitespace'],
 \   'javascript': ['prettier', 'standard', 'trim_whitespace'],
+\   'json': ['prettier', 'trim_whitespace'],
 \   'scss': ['prettier', 'trim_whitespace'],
 \   'css': ['prettier', 'trim_whitespace'],
 \   'typescript': ['prettier', 'tslint', 'trim_whitespace'],

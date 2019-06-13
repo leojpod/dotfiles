@@ -33,7 +33,8 @@ Plug 'Shougo/vimproc.vim', {'do': 'make'} " apparently still required for some p
 
 " general coding things
 Plug 'w0rp/ale' " Linter and Fixer
-Plug 'Shougo/deoplete.nvim' " Auto-complete
+" Plug 'Shougo/deoplete.nvim' " Auto-complete
+Plug 'neoclide/coc.nvim', {'do': './install.sh nightly'}
 Plug 'airblade/vim-gitgutter' " Git diff next to the line number
 Plug 'tpope/vim-fugitive' " Git support
 Plug 'nathanaelkane/vim-indent-guides' " Indent guidelines
@@ -53,7 +54,7 @@ Plug 'isruslan/vim-es6'
 
 "" - TypeScript :
 Plug 'Quramy/tsuquyomi'
-Plug 'rudism/deoplete-tsuquyomi'
+" Plug 'rudism/deoplete-tsuquyomi'
 Plug 'leafgarland/typescript-vim'
 
 "" - Ember:
@@ -68,7 +69,7 @@ Plug 'posva/vim-vue'
 
 "" - Elm:
 Plug 'ElmCast/elm-vim', { 'do': 'npm i -g elm; npm i -g elm-test; npm i -g elm-oracle; npm i -g elm-format' }
-Plug 'pbogut/deoplete-elm'
+" Plug 'pbogut/deoplete-elm'
 Plug 'kbsymanz/ctags-elm'
 Plug 'antew/vim-elm-analyse', { 'do': 'npm i -g elm-analyse' }
 Plug 'antew/vim-elm-language-server'
@@ -82,7 +83,7 @@ Plug 'dan-t/vim-hsimport'
 "" - Rust:
 Plug 'rust-lang/rust.vim', {'do': 'rustup component add rustfmt-preview --toolchain nightly'}
 " Plug 'racer-rust/vim-racer', {'do': 'cargo +nightly install racer'}
-Plug 'sebastianmarkow/deoplete-rust'
+" Plug 'sebastianmarkow/deoplete-rust'
 
 
 "" - Cucumber files:
@@ -167,7 +168,7 @@ endif
 
 " general coding things:
 source ~/.config/nvim/configs/tools/ale.vim
-source ~/.config/nvim/configs/tools/deoplete.vim
+" source ~/.config/nvim/configs/tools/deoplete.vim
 source ~/.config/nvim/configs/tools/nerdcommenter.vim
 source ~/.config/nvim/configs/tools/multiple-cursors.vim
 source ~/.config/nvim/configs/tools/minibufexpl.vim
