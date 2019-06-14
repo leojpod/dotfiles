@@ -115,6 +115,10 @@ Plug 'lervag/vimtex'
 "" - openSCAD:
 Plug 'vim-scripts/openscad.vim'
 
+"" - NGINX
+Plug 'chr4/nginx.vim'
+
+
 call plug#end()
 
 " solarized theme config
