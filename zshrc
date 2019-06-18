@@ -74,6 +74,9 @@ export NVM_DIR="$HOME/.nvm"
   [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 nvm use default
 
+
+source ~/.nix-profile/etc/profile.d/nix.sh
+
 export EDITOR=nvim
 
 export PATH="$PATH:$HOME/.local/bin"
