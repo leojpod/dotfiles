@@ -174,6 +174,7 @@ source ~/.config/nvim/configs/tools/nerdcommenter.vim
 source ~/.config/nvim/configs/tools/multiple-cursors.vim
 source ~/.config/nvim/configs/tools/minibufexpl.vim
 source ~/.config/nvim/configs/tools/ack.vim
+source ~/.config/nvim/configs/tools/indent-guides.vim
 
 " Language specific stuff
 
