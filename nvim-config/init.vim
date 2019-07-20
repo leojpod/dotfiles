@@ -69,7 +69,6 @@ Plug 'posva/vim-vue'
 
 "" - Elm:
 Plug 'ElmCast/elm-vim', { 'do': 'npm i -g elm; npm i -g elm-test; npm i -g elm-oracle; npm i -g elm-format' }
-Plug 'kbsymanz/ctags-elm'
 
 "" - Haskell:
 Plug 'neovimhaskell/haskell-vim'
