@@ -15,6 +15,10 @@ brew install tmux
 # install tpm
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
+# install elm completions
+mkdir -p ~/.bash
+git clone https://github.com/dmy/elm-sh-completion.git ~/.bash
+
 # install pinentry
 brew install pinentry
 

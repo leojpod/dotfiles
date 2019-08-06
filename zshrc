@@ -92,3 +92,6 @@ if [ -f '/Users/leojeusset/google-cloud-sdk/completion.zsh.inc' ]; then . '/User
 export PATH="$PATH:$HOME/.cargo/bin"
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+
+# elm completions
+source ~/.bash/elm-sh-completion/elm-completion.sh

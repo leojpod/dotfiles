@@ -4,6 +4,8 @@ CURRENT_DIR=`pwd -P`
 
 mkdir -p ${XDG_CONFIG_HOME:=$HOME/.config}
 
+# pull and download completions for elm
+
 # LINK CONFIGURATIONS
 echo LINKING CONFIGURATIONS...
 rm -fr ~/.tmux.conf
