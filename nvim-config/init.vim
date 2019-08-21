@@ -194,6 +194,9 @@ source ~/.config/nvim/configs/languages/elm.vim
 "" - Haskell
 source ~/.config/nvim/configs/languages/haskell.vim
 
+"" - PSQL
+source ~/.config/nvim/configs/languages/psql.vim
+
 "" - Latex
 source ~/.config/nvim/configs/languages/latex.vim
 
