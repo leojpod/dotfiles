@@ -74,7 +74,6 @@ Plug 'ElmCast/elm-vim', { 'do': 'npm i -g elm; npm i -g elm-test; npm i -g elm-o
 "" - Haskell:
 Plug 'neovimhaskell/haskell-vim'
 Plug 'nbouscal/vim-stylish-haskell', { 'do': 'stack install stylish-haskell' }
-Plug 'dan-t/vim-hsimport'
 
 "" - Rust:
 Plug 'rust-lang/rust.vim', {'do': 'rustup component add rustfmt-preview --toolchain nightly'}
