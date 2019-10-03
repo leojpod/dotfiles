@@ -64,6 +64,10 @@ eval $(thefuck --alias oh-bums)
 
 alias drun='docker run -it --network=host --rm -v $(pwd):/opt/work --workdir=/opt/work'
 alias docker-psql='drun postgres:9.5 psql'
+function who-is-using-this-damn-port() {
+  lsof -i :$1;
+}
+alias wiutdp='who-is-using-this-damn-port'
 
 if [ -f ~/.config/exercism/exercism_completion.zsh ]; then
   . ~/.config/exercism/exercism_completion.zsh
