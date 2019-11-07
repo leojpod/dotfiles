@@ -100,6 +100,9 @@ export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 # elm completions
 source ~/.bash/elm-sh-completion/elm-completion.sh
 
+# load a custom file for setting up secrets: 
+source ./secrets.sh
+
 
 # ruby ... 
 eval "$(rbenv init -)"

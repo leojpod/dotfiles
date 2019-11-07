@@ -46,6 +46,7 @@ Plug 'asturtz2/vim-insert-char', { 'branch': 'append-char' } " quicker way to ad
 Plug 'junegunn/limelight.vim'
 Plug 'ap/vim-css-color'
 Plug 'severin-lemaignan/vim-minimap'
+Plug 'AGhost-7/critiq.vim'
 
 " Language specific stuff
 
