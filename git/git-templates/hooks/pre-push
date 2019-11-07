@@ -38,7 +38,6 @@ do
         range="$remote_sha..$local_sha"
     fi
 
-    echo "analysing the following range for WIP commits: $range"
     # Check for WIP commit
     commit=`git rev-list -n 1 --grep 'WIP' -i "$range"`
     if [ -n "$commit" ]
