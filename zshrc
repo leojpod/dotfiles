@@ -101,7 +101,7 @@ export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 source ~/.bash/elm-sh-completion/elm-completion.sh
 
 # load a custom file for setting up secrets: 
-source ./secrets.sh
+source ~/.secrets.sh
 
 
 # ruby ... 

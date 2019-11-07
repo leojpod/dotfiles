@@ -13,6 +13,7 @@ ln -s $CURRENT_DIR/tmux.conf $HOME/.tmux.conf
 
 rm -fr ~/.zshrc
 ln -s $CURRENT_DIR/zshrc $HOME/.zshrc
+ln -s $CURRENT_DIR/secrets.sh $HOME/.secrets.sh
 
 rm -fr $XDG_CONFIG_HOME/kitty
 ln -s $CURRENT_DIR/kitty $XDG_CONFIG_HOME/kitty
