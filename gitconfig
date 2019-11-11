@@ -9,6 +9,7 @@
 [alias]
   st = status -sb
   lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %Cblue<%an>%Creset' --abbrev-commit --date=relative --all
+  lgb = log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %Cblue<%an>%Creset' --abbrev-commit --date=relative --ancestry-path origin/master..HEAD
   psc = !sh -c \"git push origin $(git rev-parse --abbrev-ref HEAD)\"
   pscf = !sh -c \"git push origin $(git rev-parse --abbrev-ref HEAD) --force\"
   plc = !sh -c \"git pull origin $(git rev-parse --abbrev-ref HEAD)\"
