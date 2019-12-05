@@ -22,6 +22,9 @@ git clone https://github.com/dmy/elm-sh-completion.git ~/.bash
 # install pinentry
 brew install pinentry
 
+# install bat
+brew install bat
+
 # make sure we can sign with gpg
 export GPG_TTY=$(tty)
 

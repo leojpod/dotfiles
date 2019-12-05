@@ -106,3 +106,4 @@ source ~/.secrets.sh
 
 # ruby ... 
 eval "$(rbenv init -)"
+export BAT_THEME="OneHalfLight"
