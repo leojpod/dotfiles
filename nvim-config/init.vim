@@ -119,6 +119,7 @@ call plug#end()
 
 " solarized theme config
 set t_Co=256
+set background=light
 colorscheme solarized8_flat
 
 "" General configuration section
