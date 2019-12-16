@@ -70,7 +70,7 @@ Plug 'posva/vim-vue'
 " Plug 'magarcia/vim-angular2-snippets' " Just kidding
 
 "" - Elm:
-Plug 'ElmCast/elm-vim', { 'do': 'npm i -g elm; npm i -g elm-test; npm i -g elm-oracle; npm i -g elm-format' }
+Plug 'andys8/vim-elm-syntax'
 
 "" - Haskell:
 Plug 'neovimhaskell/haskell-vim'
