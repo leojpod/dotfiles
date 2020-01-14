@@ -30,6 +30,7 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' } " fuzzy finder
 Plug 'junegunn/fzf.vim' " fuzzy finder with more options (built on top of fzf)
 Plug 'christoomey/vim-tmux-navigator' " tmux integration (works with byobu if tmux is the engine used there
 Plug 'Shougo/vimproc.vim', {'do': 'make'} " apparently still required for some plugins ...
+Plug 'mhinz/vim-startify' "a fancy startup screen
 
 " general coding things
 Plug 'w0rp/ale' " Linter and Fixer
@@ -176,6 +177,7 @@ source ~/.config/nvim/configs/tools/multiple-cursors.vim
 source ~/.config/nvim/configs/tools/minibufexpl.vim
 source ~/.config/nvim/configs/tools/ack.vim
 source ~/.config/nvim/configs/tools/indent-guides.vim
+source ~/.config/nvim/configs/tools/startify.vim
 
 " Language specific stuff
 

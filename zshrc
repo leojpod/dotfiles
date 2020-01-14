@@ -79,7 +79,7 @@ export NVM_DIR="$HOME/.nvm"
 nvm use default
 
 
-source ~/.nix-profile/etc/profile.d/nix.sh
+# source ~/.nix-profile/etc/profile.d/nix.sh
 
 export EDITOR=nvim
 
