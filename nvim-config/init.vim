@@ -179,6 +179,7 @@ source ~/.config/nvim/configs/tools/minibufexpl.vim
 source ~/.config/nvim/configs/tools/ack.vim
 source ~/.config/nvim/configs/tools/indent-guides.vim
 source ~/.config/nvim/configs/tools/startify.vim
+source ~/.config/nvim/configs/tools/tmux-navigator.vim
 
 " Language specific stuff
 
