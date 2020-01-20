@@ -32,11 +32,5 @@
   "git.topRemovedSign.hlGroup": "GitGutterDelete",
   "git.changeRemovedSign.hlGroup": "GitGutterChangeDelete",
   "codeLens.enable": true,
-  "coc.preferences.formatOnSaveFiletypes": [
-    "elm",
-    "javascript",
-    "typescript",
-    "json",
-    "ruby"
-  ]
+  "coc.preferences.formatOnSaveFiletypes": ["elm"]
 }

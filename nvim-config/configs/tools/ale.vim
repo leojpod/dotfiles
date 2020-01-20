@@ -11,11 +11,11 @@ let g:ale_fixers = {
 \   'handlebars': ['trim_whitespace'],
 \   'markdown': ['trim_whitespace'],
 \   'tex': ['trim_whitespace'],
-\   'elm': ['elm-format', 'trim_whitespace'],
 \   'haskell': ['hlint', 'trim_whitespace'],
 \   'ruby': ['rubocop', 'trim_whitespace'],
 \   'openscad': [ 'trim_whitespace' ]
 \}
+" \   'elm': ['elm-format', 'trim_whitespace'],
 
 " Custom
 let g:ale_linters = {'rust': ['rls', 'cargo']}
