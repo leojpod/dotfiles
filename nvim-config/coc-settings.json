@@ -1,4 +1,5 @@
 {
+  "tsserver.enableJavascript": true,
   "languageserver": {
     "elmLS": {
       "command": "elm-language-server",

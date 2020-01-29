@@ -34,7 +34,7 @@ Plug 'mhinz/vim-startify' " a fancy startup screen
 Plug 'alfredodeza/posero.vim' " a stuff to write presentation
 
 " general coding things
-Plug 'w0rp/ale' " Linter and Fixer
+Plug 'dense-analysis/ale' " Linter and Fixer
 " Plug 'Shougo/deoplete.nvim' " Auto-complete
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'airblade/vim-gitgutter' " Git diff next to the line number
