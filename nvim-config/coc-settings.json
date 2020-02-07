@@ -15,16 +15,24 @@
     },
     "haskell": {
       "command": "hie-wrapper",
-      "rootPatterns": [".stack.yaml", "cabal.config", "package.yaml"],
+      "rootPatterns": [
+        "package.yaml",
+        ".stack.yaml",
+        "cabal.config",
+        "stack.yaml"
+      ],
       "filetypes": ["hs", "lhs", "haskell"],
-      "initializationOptions": {},
-      "settings": {
+      "initializationOptions": {
         "languageServerHaskell": {
-          "hlintOn": false,
+          "hlintOn": true,
           "maxNumberOfProblems": 10,
           "completionSnippetsOn": true
         }
       }
+    },
+    "lua": {
+      "command": "lua-lsp",
+      "filetypes": ["lua"]
     }
   },
   "git.addedSign.hlGroup": "GitGutterAdd",
@@ -33,5 +41,5 @@
   "git.topRemovedSign.hlGroup": "GitGutterDelete",
   "git.changeRemovedSign.hlGroup": "GitGutterChangeDelete",
   "codeLens.enable": true,
-  "coc.preferences.formatOnSaveFiletypes": ["elm"]
+  "coc.preferences.formatOnSaveFiletypes": ["elm", "haskell", "lua"]
 }

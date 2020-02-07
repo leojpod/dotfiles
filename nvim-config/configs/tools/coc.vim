@@ -48,3 +48,9 @@ nnoremap <silent> <space>j  :<C-u>CocNext<CR>
 nnoremap <silent> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list
 nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
+
+" " Coc Floating (e.g. errors)
+" hi link CocFloating Visual
+" hi link CocErrorFloat Visual
+" hi link CocWarningFloat Visual
+" hi link CocInfoFloat Visual

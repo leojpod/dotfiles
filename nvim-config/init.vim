@@ -50,6 +50,9 @@ Plug 'ap/vim-css-color'
 Plug 'severin-lemaignan/vim-minimap'
 Plug 'AGhost-7/critiq.vim'
 
+" shameless plug to my first plugin
+Plug 'leojpod/gitstandup.vim'
+
 " Language specific stuff
 
 "" - JavaScript:
@@ -76,6 +79,7 @@ Plug 'andys8/vim-elm-syntax', { 'for': ['elm'] }
 
 "" - Haskell:
 Plug 'neovimhaskell/haskell-vim'
+" Plug 'alx741/vim-hindent'
 Plug 'nbouscal/vim-stylish-haskell', { 'do': 'stack install stylish-haskell' }
 
 "" - Rust:
