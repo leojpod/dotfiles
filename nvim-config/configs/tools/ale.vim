@@ -13,7 +13,8 @@ let g:ale_fixers = {
 \   'tex': ['trim_whitespace'],
 \   'haskell': ['hlint', 'trim_whitespace'],
 \   'ruby': ['rubocop', 'trim_whitespace'],
-\   'openscad': [ 'trim_whitespace' ]
+\   'openscad': [ 'trim_whitespace' ],
+\   'html': [ 'prettier', 'trim_whitespace' ]
 \}
 " \   'elm': ['elm-format', 'trim_whitespace'],
 
