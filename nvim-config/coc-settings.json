@@ -1,5 +1,19 @@
 {
   "tsserver.enableJavascript": true,
+  "prettier.tslintIntegration": true,
+  "prettier.eslintIntegration": true,
+  "tslint": {
+    "enable": true,
+    "run": "onSave",
+    "autoFixOnSave": true,
+    "filetypes": ["typescript"]
+  },
+  "eslint": {
+    "enable": true,
+    "run": "onSave",
+    "autoFixOnSave": true,
+    "filetypes": ["javascript"]
+  },
   "languageserver": {
     "elmLS": {
       "command": "elm-language-server",
@@ -41,5 +55,16 @@
   "git.topRemovedSign.hlGroup": "GitGutterDelete",
   "git.changeRemovedSign.hlGroup": "GitGutterChangeDelete",
   "codeLens.enable": true,
-  "coc.preferences.formatOnSaveFiletypes": ["elm", "haskell", "lua"]
+  "coc.preferences.formatOnSaveFiletypes": [
+    "elm",
+    "haskell",
+    "lua",
+    "javascript",
+    "typescript",
+    "json",
+    "css",
+    "scss",
+    "Markdown",
+    "YAML"
+  ]
 }

@@ -3,11 +3,9 @@ let g:ale_fixers = {
 \   'vim': ['trim_whitespace'],
 \   'yaml': ['trim_whitespace'],
 \   'cucumber': ['trim_whitespace'],
-\   'javascript': ['prettier', 'standard', 'trim_whitespace'],
 \   'json': ['prettier', 'trim_whitespace'],
 \   'scss': ['prettier', 'trim_whitespace'],
 \   'css': ['prettier', 'trim_whitespace'],
-\   'typescript': ['prettier', 'tslint', 'trim_whitespace'],
 \   'handlebars': ['trim_whitespace'],
 \   'markdown': ['trim_whitespace'],
 \   'tex': ['trim_whitespace'],
@@ -16,6 +14,8 @@ let g:ale_fixers = {
 \   'openscad': [ 'trim_whitespace' ],
 \   'html': [ 'prettier', 'trim_whitespace' ]
 \}
+" \   'typescript': ['prettier', 'tslint', 'trim_whitespace'],
+" \   'javascript': ['prettier', 'standard', 'trim_whitespace'],
 " \   'elm': ['elm-format', 'trim_whitespace'],
 
 " Custom
