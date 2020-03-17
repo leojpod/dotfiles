@@ -173,6 +173,9 @@ elseif has("gui_running")
   source ~/.config/nvim/configs/tools/gui.vim
 endif
 
+" grab the esc key in terminal mode to go to normal
+tnoremap <Esc> <C-\><C-n>
+
 " general coding things:
 source ~/.config/nvim/configs/tools/ale.vim
 " source ~/.config/nvim/configs/tools/deoplete.vim
