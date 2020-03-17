@@ -72,7 +72,11 @@ if [ -f ~/.config/exercism/exercism_completion.zsh ]; then
   . ~/.config/exercism/exercism_completion.zsh
 fi
 
-. $HOME/.asdf/asdf.sh
+# Setup asdf
+# . $HOME/.asdf/asdf.sh
+export PATH="$HOME/.asdf/bin:$PATH"
+# Hook direnv into your shell.
+eval "$(asdf exec direnv hook bash)"
 
 # source ~/.nix-profile/etc/profile.d/nix.sh
 
