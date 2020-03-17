@@ -37,12 +37,15 @@ brew install thefuck
 # install the search stuff
 brew install ripgrep
 
-# install nvm
-curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | bash
+# install asdf-vm
+git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.7.7
+# install stuff for asdf
+brew install \
+  coreutils automake autoconf openssl \
+  libyaml readline libxslt libtool unixodbc \
+  unzip curl
 
-# install some node versions
-nvm install 10
-nvm install 8
+
 
 # install rustup
 curl https://sh.rustup.rs -sSf | sh

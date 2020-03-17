@@ -15,7 +15,6 @@ plugins=(
   git
   docker
   docker-compose
-  nvm
   brew
   history-substring-search
 )
@@ -73,11 +72,7 @@ if [ -f ~/.config/exercism/exercism_completion.zsh ]; then
   . ~/.config/exercism/exercism_completion.zsh
 fi
 
-export NVM_DIR="$HOME/.nvm"
-  [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-  [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-nvm use default
-
+. $HOME/.asdf/asdf.sh
 
 # source ~/.nix-profile/etc/profile.d/nix.sh
 
@@ -106,4 +101,6 @@ source ~/.secrets.sh
 
 # ruby ... 
 eval "$(rbenv init -)"
+
+# quick customization of the bat tool
 export BAT_THEME="OneHalfLight"
