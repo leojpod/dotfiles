@@ -120,6 +120,9 @@ Plug 'vim-scripts/openscad.vim'
 "" - NGINX
 Plug 'chr4/nginx.vim'
 
+"" - R
+Plug 'jalvesaq/Nvim-R'
+
 
 call plug#end()
 
