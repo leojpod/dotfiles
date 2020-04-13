@@ -72,6 +72,10 @@ if [ -f ~/.config/exercism/exercism_completion.zsh ]; then
   . ~/.config/exercism/exercism_completion.zsh
 fi
 
+# nvm setup
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+
 # Setup asdf
 # . $HOME/.asdf/asdf.sh
 export PATH="$HOME/.asdf/bin:$PATH"
@@ -104,7 +108,7 @@ source ~/.secrets.sh
 
 
 # ruby ... 
-eval "$(rbenv init -)"
+# eval "$(rbenv init -)"
 
 # quick customization of the bat tool
 export BAT_THEME="OneHalfLight"
