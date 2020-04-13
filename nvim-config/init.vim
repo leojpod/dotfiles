@@ -122,6 +122,8 @@ Plug 'chr4/nginx.vim'
 
 "" - R
 Plug 'jalvesaq/Nvim-R'
+let R_in_buffer = 0
+let R_assign = 0
 
 
 call plug#end()
