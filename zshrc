@@ -12,6 +12,7 @@ ZSH_THEME="kolo"
 DEFAULT_USER="leojpod"
 
 plugins=(
+  aws
   git
   docker
   docker-compose
@@ -26,7 +27,10 @@ setopt HIST_IGNORE_ALL_DUPS
 export KEYTIMEOUT=10 # reduce the timeout to switch between modes
 
 # ignore all duplicated result when searching history
-setopt HIST_FIND_NO_DUPS 
+setopt HIST_FIND_NO_DUPS
+
+# dark magic
+setopt magic_equal_subst
 
 bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
