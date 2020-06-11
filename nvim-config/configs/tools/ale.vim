@@ -33,7 +33,7 @@ let g:ale_statusline_format = ['⨉ %d', '⚠ %d', '⬥ ok']
 let g:ale_lint_on_text_changed = 'never'
 
 " Enable completion where available.
-let g:ale_completion_enabled = 1
+let g:ale_completion_enabled = 0
 
 nmap <silent> <C-y> <Plug>(ale_previous_wrap)
 nmap <silent> <C-e> <Plug>(ale_next_wrap)

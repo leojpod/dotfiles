@@ -4,6 +4,7 @@ set updatetime=300
 inoremap <silent><expr><Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <silent><expr><S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 autocmd! CompleteDone * if pumvisible() == 0 | pclose | endif
+inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm() : "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
 
 " Do default action for next item.
 " nnoremap <silent> <space>j  :<C-u>CocNext<CR>
@@ -13,7 +14,7 @@ autocmd! CompleteDone * if pumvisible() == 0 | pclose | endif
 " Remap for do codeAction of current line
 nmap <leader>ac  <Plug>(coc-codeaction)
 " Fix autofix problem of current line
-nmap <leader>qf  <Plug>(coc-fix-current)<Paste>
+nmap <leader>qf  <Plug>(coc-fix-current)
 
 " Remap for rename current word
 nmap <leader>rn <Plug>(coc-rename)
@@ -30,6 +31,18 @@ nmap <silent> gr <Plug>(coc-references)
 
 " Use K to show documentation in preview window
 nnoremap <silent> K :call <SID>show_documentation()<CR>
+
+function! s:show_documentation()
+  if (index(['vim','help'], &filetype) >= 0)
+    execute 'h '.expand('<cword>')
+  else
+    call CocAction('doHover')
+  endif
+endfunction
+
+" Highlight the symbol and its references when holding the cursor.
+autocmd CursorHold * silent call CocActionAsync('highlight')
+
 
 " Using CocList
 " Show all diagnostics

@@ -2,6 +2,7 @@
   "tsserver.enableJavascript": true,
   "prettier.tslintIntegration": true,
   "prettier.eslintIntegration": true,
+  "diagnostic.enableSign": true,
   "tslint": {
     "enable": true,
     "run": "onSave",
@@ -17,14 +18,10 @@
   "languageserver": {
     "elmLS": {
       "command": "elm-language-server",
-      "args": ["--stdio"],
       "filetypes": ["elm"],
       "rootPatterns": ["elm.json"],
       "initializationOptions": {
-        "runtime": "node",
-        "elmPath": "elm",
-        "elmFormatPath": "elm-format",
-        "elmTestPath": "elm-test"
+        "elmAnalyseTrigger": "change"
       }
     },
     "haskell": {
