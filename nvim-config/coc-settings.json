@@ -20,7 +20,11 @@
       "command": "elm-language-server",
       "filetypes": ["elm"],
       "rootPatterns": ["elm.json"],
+      "trace.server": "verbose",
       "initializationOptions": {
+        "elmPath": "elm",
+        "elmTestPath": "elm-test",
+        "elmFormatPath": "elm-format",
         "elmAnalyseTrigger": "change"
       }
     },

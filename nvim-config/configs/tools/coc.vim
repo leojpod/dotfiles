@@ -22,6 +22,8 @@ nmap <leader>rn <Plug>(coc-rename)
 " Use `[c` and `]c` to navigate diagnostics
 nmap <silent> [c <Plug>(coc-diagnostic-prev)
 nmap <silent> ]c <Plug>(coc-diagnostic-next)
+nmap <silent> <C-y> <Plug>(coc-diagnostic-prev)
+nmap <silent> <C-e> <Plug>(coc-diagnostic-next)
 
 " Remap keys for gotos
 nmap <silent> gd <Plug>(coc-definition)

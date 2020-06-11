@@ -34,8 +34,6 @@ Plug 'mhinz/vim-startify' " a fancy startup screen
 Plug 'alfredodeza/posero.vim' " a stuff to write presentation
 
 " general coding things
-Plug 'dense-analysis/ale' " Linter and Fixer
-" Plug 'Shougo/deoplete.nvim' " Auto-complete
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'airblade/vim-gitgutter' " Git diff next to the line number
 Plug 'tpope/vim-fugitive' " Git support
@@ -182,8 +180,6 @@ endif
 tnoremap <Esc> <C-\><C-n>
 
 " general coding things:
-source ~/.config/nvim/configs/tools/ale.vim
-" source ~/.config/nvim/configs/tools/deoplete.vim
 source ~/.config/nvim/configs/tools/coc.vim
 source ~/.config/nvim/configs/tools/nerdcommenter.vim
 source ~/.config/nvim/configs/tools/multiple-cursors.vim
