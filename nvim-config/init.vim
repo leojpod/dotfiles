@@ -223,6 +223,7 @@ source ~/.config/nvim/configs/languages/rust.vim
 
 "" - Markdown:
 source ~/.config/nvim/configs/languages/notational.vim
+source ~/.config/nvim/configs/languages/md.vim
 
 "" - Rest:
 source ~/.config/nvim/configs/languages/rest-console.vim
