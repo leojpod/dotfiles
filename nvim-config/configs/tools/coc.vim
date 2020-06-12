@@ -1,5 +1,8 @@
 set updatetime=300
 
+" use prettier for formating
+command! -nargs=0 Prettier :CocCommand prettier.formatFile
+
 " use tab and shift-tab to navigate the completion list
 inoremap <silent><expr><Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <silent><expr><S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
@@ -25,7 +28,7 @@ nmap <silent> ]c <Plug>(coc-diagnostic-next)
 nmap <silent> <C-y> <Plug>(coc-diagnostic-prev)
 nmap <silent> <C-e> <Plug>(coc-diagnostic-next)
 
-" Remap keys for gotos
+" Remap keys for go-tos
 nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
