@@ -37,6 +37,7 @@ Plug 'alfredodeza/posero.vim' " a stuff to write presentation
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'airblade/vim-gitgutter' " Git diff next to the line number
 Plug 'tpope/vim-fugitive' " Git support
+Plug 'jreybert/vimagit' " Another Git plugin to try
 Plug 'nathanaelkane/vim-indent-guides' " Indent guidelines
 Plug 'editorconfig/editorconfig-vim' " Support for .editorconfig
 Plug 'jiangmiao/auto-pairs' " what is says on the tin
