@@ -73,7 +73,10 @@ Plug 'posva/vim-vue'
 "" - Angular:
 " Plug 'magarcia/vim-angular2-snippets' " Just kidding
 
-"" - Elm:
+" - GraphQl
+Plug 'jparise/vim-graphql'
+
+" - Elm:
 Plug 'andys8/vim-elm-syntax', { 'for': ['elm'] }
 
 "" - Haskell:
