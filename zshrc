@@ -72,6 +72,8 @@ function who-is-using-this-damn-port() {
 }
 alias wiutdp='who-is-using-this-damn-port'
 
+alias gcd='gco dev'   # for when the default git branch is dev
+
 if [ -f ~/.config/exercism/exercism_completion.zsh ]; then
   . ~/.config/exercism/exercism_completion.zsh
 fi
