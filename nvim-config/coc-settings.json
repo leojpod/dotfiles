@@ -76,7 +76,8 @@
     "scss",
     "Markdown",
     "YAML",
-    "rust"
+    "rust",
+    "python"
   ],
   "rust.clippy_preference": "on",
   "cSpell.language": "en-GB",
