@@ -75,6 +75,10 @@
     "css",
     "scss",
     "Markdown",
-    "YAML"
-  ]
+    "YAML",
+    "rust"
+  ],
+  "rust.clippy_preference": "on",
+  "cSpell.language": "en-GB",
+  "cSpell.userWords": ["CTYOSPONGE"]
 }
