@@ -32,6 +32,7 @@ Plug 'christoomey/vim-tmux-navigator' " tmux integration (works with byobu if tm
 Plug 'Shougo/vimproc.vim', {'do': 'make'} " apparently still required for some plugins ...
 Plug 'mhinz/vim-startify' " a fancy startup screen
 Plug 'alfredodeza/posero.vim' " a stuff to write presentation
+Plug 'tpope/vim-dispatch'
 
 " general coding things
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -109,6 +110,9 @@ Plug 'diepm/vim-rest-console'
 "" - PSQL:
 Plug 'lifepillar/pgsql.vim'
 Plug 'vim-scripts/dbext.vim'
+Plug 'tpope/vim-dadbod'
+Plug 'kristijanhusak/vim-dadbod-ui'
+Plug 'kristijanhusak/vim-dadbod-completion'
 
 "" - Prolog:
 Plug 'adimit/prolog.vim'
