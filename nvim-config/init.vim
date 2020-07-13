@@ -86,9 +86,8 @@ Plug 'neovimhaskell/haskell-vim'
 Plug 'nbouscal/vim-stylish-haskell', { 'do': 'stack install stylish-haskell' }
 
 "" - Rust:
-Plug 'rust-lang/rust.vim', {'do': 'rustup component add rustfmt-preview --toolchain nightly'}
+Plug 'rust-lang/rust.vim', {'do': 'rustup component add rustfmt-preview '}
 " Plug 'racer-rust/vim-racer', {'do': 'cargo +nightly install racer'}
-" Plug 'sebastianmarkow/deoplete-rust'
 
 
 "" - Cucumber files:
