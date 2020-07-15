@@ -187,6 +187,9 @@ endif
 " grab the esc key in terminal mode to go to normal
 tnoremap <Esc> <C-\><C-n>
 
+" use gT to open a new tab
+noremap gT :tabnew <CR>
+
 " general coding things:
 source ~/.config/nvim/configs/tools/coc.vim
 source ~/.config/nvim/configs/tools/nerdcommenter.vim
