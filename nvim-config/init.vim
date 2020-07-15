@@ -189,6 +189,7 @@ tnoremap <Esc> <C-\><C-n>
 
 " use gT to open a new tab
 noremap gT :tabnew <CR>
+noremap gb :tabprevious <CR>
 
 " general coding things:
 source ~/.config/nvim/configs/tools/coc.vim
