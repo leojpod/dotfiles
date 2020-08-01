@@ -90,6 +90,8 @@ Plug 'nbouscal/vim-stylish-haskell', { 'do': 'stack install stylish-haskell' }
 Plug 'rust-lang/rust.vim', {'do': 'rustup component add rustfmt-preview '}
 " Plug 'racer-rust/vim-racer', {'do': 'cargo +nightly install racer'}
 
+"" - Unison web 
+Plug 'unisonweb/unison', { 'branch': 'trunk', 'rtp': 'editor-support/vim' }
 
 "" - Cucumber files:
 Plug 'tpope/vim-cucumber'
