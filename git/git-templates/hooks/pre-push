@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/zsh
 
 # recipe stolen from https://hasper.info/git-hook-to-prevent-wip-commits-to-certain-branches/ and adjusted
 # mixed with https://riptutorial.com/git/example/27005/git-pre-push-hook
@@ -42,8 +42,9 @@ do
     commit=`git rev-list -n 1 --grep 'WIP' -i "$range"`
     if [ -n "$commit" ]
     then
-      echo "Found WIP commit in $local_ref: $commit, not pushing."
-      exit 1
+      echo "Found WIP commit in $local_ref: $commit"
+      echo "Are you sure that you'd like to push anyway? [y/N]"
+      read -q  && (echo "" && exit 0)|| (echo "" && exit 1)
     fi
   fi
 done
