@@ -118,3 +118,7 @@ source ~/.secrets.sh
 
 # quick customization of the bat tool
 export BAT_THEME="OneHalfLight"
+
+
+# quick CLI utility: 
+source ~/.scripts/confirm.sh
