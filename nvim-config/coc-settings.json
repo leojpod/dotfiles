@@ -13,7 +13,7 @@
     "enable": true,
     "run": "onSave",
     "autoFixOnSave": true,
-    "filetypes": ["javascript"]
+    "filetypes": ["javascript", "typescript"]
   },
   "languageserver": {
     "elmLS": {
@@ -41,8 +41,13 @@
         "languageServerHaskell": {
           "hlintOn": true,
           "maxNumberOfProblems": 10,
-          "completionSnippetsOn": true
-        }
+          "completionSnippetsOn": true,
+          "formattingProvider": "brittany"
+        },
+        "hlintOn": true,
+        "maxNumberOfProblems": 10,
+        "completionSnippetsOn": true,
+        "formattingProvider": "brittany"
       }
     },
     "lua": {
@@ -81,5 +86,5 @@
   ],
   "rust.clippy_preference": "on",
   "cSpell.language": "en-GB",
-  "cSpell.userWords": ["CTYOSPONGE"]
+  "cSpell.userWords": ["spec"]
 }
