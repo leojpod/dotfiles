@@ -138,6 +138,8 @@ Plug 'jalvesaq/Nvim-R'
 let R_in_buffer = 0
 let R_assign = 0
 
+"" - Clojure
+Plug 'vim-scripts/VimClojure'
 
 call plug#end()
 
@@ -243,3 +245,5 @@ source ~/.config/nvim/configs/languages/md.vim
 "" - Rest:
 source ~/.config/nvim/configs/languages/rest-console.vim
 
+"" - clojure: 
+source ~/.config/nvim/configs/languages/clojure.vim

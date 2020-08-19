@@ -38,26 +38,16 @@
       }
     },
     "haskell": {
-      "command": "hie-wrapper",
+      "command": "haskell-language-server-wrapper",
+      "args": ["--lsp"],
       "rootPatterns": [
+        "*.cabal",
+        "stack.yaml",
+        "cabal.project",
         "package.yaml",
-        ".stack.yaml",
-        "cabal.config",
-        "stack.yaml"
+        "hie.yaml"
       ],
-      "filetypes": ["hs", "lhs", "haskell"],
-      "initializationOptions": {
-        "languageServerHaskell": {
-          "hlintOn": true,
-          "maxNumberOfProblems": 10,
-          "completionSnippetsOn": true,
-          "formattingProvider": "brittany"
-        },
-        "hlintOn": true,
-        "maxNumberOfProblems": 10,
-        "completionSnippetsOn": true,
-        "formattingProvider": "brittany"
-      }
+      "filetypes": ["haskell", "lhaskell"]
     },
     "lua": {
       "command": "lua-lsp",
@@ -95,5 +85,9 @@
   ],
   "rust.clippy_preference": "on",
   "cSpell.language": "en-GB",
-  "cSpell.userWords": ["spec"]
+  "cSpell.userWords": [
+    "setup",
+    "spec",
+    "tailwindcss"
+  ]
 }

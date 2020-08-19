@@ -122,3 +122,4 @@ export BAT_THEME="OneHalfLight"
 
 # quick CLI utility: 
 source ~/.scripts/confirm.sh
+if [ -e /Users/leojpod/.nix-profile/etc/profile.d/nix.sh ]; then . /Users/leojpod/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
