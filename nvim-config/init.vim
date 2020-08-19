@@ -96,6 +96,11 @@ Plug 'unisonweb/unison', { 'branch': 'trunk', 'rtp': 'editor-support/vim' }
 "" - Cucumber files:
 Plug 'tpope/vim-cucumber'
 
+
+"" - Clojure: 
+Plug 'tpope/vim-fireplace', { 'commit': '8a4f232e9844d73adb41eb29148f0c046c730f98' }
+Plug 'venantius/vim-cljfmt'
+
 "" - Markdown:
 Plug 'Alok/notational-fzf-vim'
 Plug 'reedes/vim-pencil'       " Super powered writing things
