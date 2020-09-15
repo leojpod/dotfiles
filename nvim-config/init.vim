@@ -98,8 +98,9 @@ Plug 'tpope/vim-cucumber'
 
 
 "" - Clojure: 
-Plug 'tpope/vim-fireplace', { 'commit': '8a4f232e9844d73adb41eb29148f0c046c730f98' }
-Plug 'venantius/vim-cljfmt'
+Plug 'guns/vim-sexp',    {'for': 'clojure'}
+Plug 'liquidz/vim-iced', {'for': 'clojure'}
+Plug 'liquidz/vim-iced-coc-source', {'for': 'clojure'}
 
 "" - Markdown:
 Plug 'Alok/notational-fzf-vim'
@@ -140,6 +141,12 @@ let R_assign = 0
 
 "" - Clojure
 Plug 'vim-scripts/VimClojure'
+
+"" - F# 
+Plug 'fsharp/vim-fsharp', {
+      \ 'for': 'fsharp',
+      \ 'do':  'make fsautocomplete',
+      \}
 
 call plug#end()
 

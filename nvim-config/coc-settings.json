@@ -59,6 +59,11 @@
       "filetypes": ["terraform", "tf"],
       "initializationOptions": {},
       "settings": {}
+    },
+    "sql": {
+      "command": "sql-language-server",
+      "args": ["up", "--method", "stdio"],
+      "filetypes": ["sql", "mysql"]
     }
   },
   "git.addedSign.hlGroup": "GitGutterAdd",
@@ -68,6 +73,7 @@
   "git.changeRemovedSign.hlGroup": "GitGutterChangeDelete",
   "codeLens.enable": true,
   "coc.preferences.formatOnSaveFiletypes": [
+    "clojure",
     "elm",
     "haskell",
     "lua",
@@ -83,11 +89,8 @@
     "rust",
     "python"
   ],
+  "coc.source.iced.enable": true,
   "rust.clippy_preference": "on",
   "cSpell.language": "en-GB",
-  "cSpell.userWords": [
-    "setup",
-    "spec",
-    "tailwindcss"
-  ]
+  "cSpell.userWords": ["setup", "spec", "tailwindcss"]
 }
