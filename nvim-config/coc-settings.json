@@ -81,6 +81,7 @@
     "typescript",
     "R",
     "r",
+    "fsharp",
     "json",
     "css",
     "scss",
@@ -92,5 +93,10 @@
   "coc.source.iced.enable": true,
   "rust.clippy_preference": "on",
   "cSpell.language": "en-GB",
-  "cSpell.userWords": ["setup", "spec", "tailwindcss"]
+  "cSpell.userWords": [
+    "setup",
+    "spec",
+    "tailwindcss",
+    "webcomponents"
+  ]
 }

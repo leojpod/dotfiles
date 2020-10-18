@@ -33,6 +33,7 @@ Plug 'Shougo/vimproc.vim', {'do': 'make'} " apparently still required for some p
 Plug 'mhinz/vim-startify' " a fancy startup screen
 Plug 'alfredodeza/posero.vim' " a stuff to write presentation
 Plug 'tpope/vim-dispatch'
+Plug 'rhysd/vim-grammarous'
 
 " general coding things
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -147,6 +148,11 @@ Plug 'fsharp/vim-fsharp', {
       \ 'for': 'fsharp',
       \ 'do':  'make fsautocomplete',
       \}
+
+
+"" - Nix stuff 
+Plug 'LnL7/vim-nix'
+
 
 call plug#end()
 
