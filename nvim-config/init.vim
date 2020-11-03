@@ -37,6 +37,7 @@ Plug 'rhysd/vim-grammarous'
 
 " general coding things
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'sheerun/vim-polyglot'
 Plug 'airblade/vim-gitgutter' " Git diff next to the line number
 Plug 'tpope/vim-fugitive' " Git support
 Plug 'jreybert/vimagit' " this provide the brilliant :Magic command, an absolute must have!
@@ -102,6 +103,7 @@ Plug 'tpope/vim-cucumber'
 Plug 'guns/vim-sexp',    {'for': 'clojure'}
 Plug 'liquidz/vim-iced', {'for': 'clojure'}
 Plug 'liquidz/vim-iced-coc-source', {'for': 'clojure'}
+Plug 'vim-scripts/VimClojure'
 
 "" - Markdown:
 Plug 'Alok/notational-fzf-vim'
@@ -140,15 +142,14 @@ Plug 'jalvesaq/Nvim-R'
 let R_in_buffer = 0
 let R_assign = 0
 
-"" - Clojure
-Plug 'vim-scripts/VimClojure'
-
 "" - F# 
 Plug 'fsharp/vim-fsharp', {
       \ 'for': 'fsharp',
       \ 'do':  'make fsautocomplete',
       \}
 
+"" - Solidity 
+Plug 'tomlion/vim-solidity'
 
 "" - Nix stuff 
 Plug 'LnL7/vim-nix'
