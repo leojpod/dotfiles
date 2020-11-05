@@ -29,5 +29,7 @@ ln -s $CURRENT_DIR/gitconfig $HOME/.gitconfig
 rm -fr $HOME/.git-templates
 ln -s $CURRENT_DIR/git/git-templates $HOME/.git-templates
 
+rm -fr $HOME/.tool-versions
+ln -s $CURRENT_DIR/tool-versions $HOME/.tool-versions
 
 echo CONFIGURATIONS LINKED.

@@ -45,6 +45,9 @@ brew install \
   libyaml readline libxslt libtool unixodbc \
   unzip curl
 
+# install npm
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.36.0/install.sh | bash
+
 
 
 # install rustup
