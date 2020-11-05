@@ -17,7 +17,7 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 # install elm completions
 mkdir -p ~/.bash
-git clone https://github.com/dmy/elm-sh-completion.git ~/.bash
+git clone https://github.com/dmy/elm-sh-completion.git ~/.bash/elm-sh-completion
 
 # install pinentry
 brew install pinentry
