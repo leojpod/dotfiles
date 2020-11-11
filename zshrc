@@ -26,6 +26,10 @@ setopt HIST_IGNORE_ALL_DUPS
 
 export KEYTIMEOUT=10 # reduce the timeout to switch between modes
 
+# potential issue with tmux and utf-8 ...
+export LC_ALL=en_GB.UTF-8
+export LANG=en_GB.UTF-8
+
 # ignore all duplicated result when searching history
 setopt HIST_FIND_NO_DUPS
 
