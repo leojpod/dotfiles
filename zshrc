@@ -124,8 +124,16 @@ source ~/.secrets.sh
 # quick customization of the bat tool
 export BAT_THEME="OneHalfLight"
 
+compinit
+# Completion for kitty
+kitty + complete setup zsh | source /dev/stdin
 
 # quick CLI utility: 
 source ~/.scripts/confirm.sh
 if [ -e /Users/leojpod/.nix-profile/etc/profile.d/nix.sh ]; then . /Users/leojpod/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
 [ -f "/Users/leojpod/.ghcup/env" ] && source "/Users/leojpod/.ghcup/env" # ghcup-env
+
+
+alias night-shift='kitty @set-colors ${KITTY_CONFIG_DIRECTORY:-~/.config/kitty}/night-colors.conf'
+
+alias day-shift='kitty @set-colors ${KITTY_CONFIG_DIRECTORY:-~/.config/kitty}/day-colors.conf'
