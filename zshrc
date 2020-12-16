@@ -134,6 +134,6 @@ if [ -e /Users/leojpod/.nix-profile/etc/profile.d/nix.sh ]; then . /Users/leojpo
 [ -f "/Users/leojpod/.ghcup/env" ] && source "/Users/leojpod/.ghcup/env" # ghcup-env
 
 
-alias night-shift='kitty @set-colors ${KITTY_CONFIG_DIRECTORY:-~/.config/kitty}/night-colors.conf'
+alias night-shift='export DAY_NIGHT="NIGHT"; kitty @set-colors ${KITTY_CONFIG_DIRECTORY:-~/.config/kitty}/night-colors.conf'
 
-alias day-shift='kitty @set-colors ${KITTY_CONFIG_DIRECTORY:-~/.config/kitty}/day-colors.conf'
+alias day-shift='export DAY_NIGHT="DAY"; kitty @set-colors ${KITTY_CONFIG_DIRECTORY:-~/.config/kitty}/day-colors.conf'

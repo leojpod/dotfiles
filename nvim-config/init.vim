@@ -159,8 +159,14 @@ call plug#end()
 
 " solarized theme config
 set t_Co=256
-set background=light
-colorscheme solarized8_flat
+if $DAY_NIGHT ==# "NIGHT"
+  set termguicolors
+  set background=dark
+  colorscheme solarized8
+else
+  set background=light
+  colorscheme solarized8_flat
+endif
 
 "" General configuration section
 

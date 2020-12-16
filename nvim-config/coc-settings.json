@@ -85,6 +85,7 @@
     "json",
     "css",
     "scss",
+    "html",
     "Markdown",
     "YAML",
     "rust",
@@ -97,6 +98,7 @@
     "dismissible",
     "setup",
     "shortcut",
+    "solarized",
     "spec",
     "tailwindcss",
     "webcomponents"
