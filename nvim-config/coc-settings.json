@@ -83,6 +83,7 @@
     "r",
     "css",
     "scss",
+    "html",
     "Markdown",
     "YAML",
     "rust",
@@ -99,6 +100,7 @@
     "pipeable",
     "setup",
     "shortcut",
+    "solarized",
     "spec",
     "tailwindcss",
     "webcomponents"
