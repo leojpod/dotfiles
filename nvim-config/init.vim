@@ -219,6 +219,10 @@ tnoremap <Esc> <C-\><C-n>
 noremap gT :tabnew <CR>
 noremap gb :tabprevious <CR>
 
+" super folding trick 
+nnoremap <silent> <Space> @=(foldlevel('.')?'za':"\<Space>")<CR>
+vnoremap <Space> zf
+
 " general coding things:
 source ~/.config/nvim/configs/tools/coc.vim
 source ~/.config/nvim/configs/tools/nerdcommenter.vim

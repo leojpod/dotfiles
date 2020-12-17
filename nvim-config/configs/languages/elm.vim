@@ -5,4 +5,4 @@ let g:elm_format_autosave = 1
 "
 
 autocmd Syntax elm setlocal foldmethod=indent 
-autocmd Syntax elm zR
+autocmd Syntax elm normal zR
