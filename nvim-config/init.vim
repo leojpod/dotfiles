@@ -112,7 +112,7 @@ Plug 'junegunn/limelight.vim'  " Highlights only active paragraph
 Plug 'reedes/vim-lexical'      " Lexicographical errors
 Plug 'reedes/vim-litecorrect'  " Better autocorrections
 Plug 'junegunn/goyo.vim'       " Spacing
-Plug 'godlygeek/tabular'       " Crate tables
+Plug 'godlygeek/tabular'       " Create tables
 Plug 'plasticboy/vim-markdown' " Markdown
 
 "" - Rest:

@@ -25,6 +25,11 @@
       "trace.server": "verbose",
       "initializationOptions": {}
     },
+    "dockerfile": {
+      "command": "docker-langserver",
+      "filetypes": ["dockerfile"],
+      "args": ["--stdio"]
+    },
     "elmLS": {
       "command": "elm-language-server",
       "filetypes": ["elm"],
@@ -88,6 +93,7 @@
     "json",
     "R",
     "r",
+    "fsharp",
     "css",
     "scss",
     "html",
@@ -101,7 +107,9 @@
   "cSpell.language": "en-GB",
   "cSpell.userWords": [
     "Aragon",
+    "Cmds",
     "Lato",
+    "Millis",
     "Roboto",
     "Scrive",
     "admins",
