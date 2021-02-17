@@ -16,6 +16,7 @@ plugins=(
   git
   docker
   docker-compose
+  elixir
   brew
   history-substring-search
 )

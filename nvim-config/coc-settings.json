@@ -37,6 +37,11 @@
         "elmAnalyseTrigger": "change"
       }
     },
+    "graphql": {
+      "command": "graphql-lsp",
+      "args": ["server", "-m", "stream"],
+      "filetypes": ["graphql"]
+    },
     "haskell": {
       "command": "haskell-language-server-wrapper",
       "args": ["--lsp"],
@@ -79,6 +84,7 @@
     "lua",
     "javascript",
     "typescript",
+    "graphql",
     "json",
     "R",
     "r",
@@ -94,6 +100,7 @@
   "rust.clippy_preference": "on",
   "cSpell.language": "en-GB",
   "cSpell.userWords": [
+    "Aragon",
     "Lato",
     "Roboto",
     "Scrive",
