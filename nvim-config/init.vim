@@ -71,6 +71,10 @@ Plug 'leafgarland/typescript-vim'
 Plug 'joukevandermaas/vim-ember-hbs'
 Plug 'mustache/vim-mustache-handlebars'
 
+"" - Elixir:
+Plug 'elixir-editors/vim-elixir'
+Plug 'mhinz/vim-mix-format'
+
 "" - Vue.js:
 Plug 'posva/vim-vue'
 
@@ -242,6 +246,9 @@ source ~/.config/nvim/configs/languages/typescript.vim
 
 "" - Ember:
 source ~/.config/nvim/configs/languages/handlebars.vim
+
+"" - Elixir:
+source ~/.config/nvim/configs/languages/elixir.vim
 
 "" - Vue.js:
 autocmd FileType vue syntax sync fromstart

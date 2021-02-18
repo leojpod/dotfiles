@@ -97,6 +97,8 @@
     "css",
     "scss",
     "html",
+    "elixir",
+    "eelixir",
     "markdown",
     "YAML",
     "rust",
@@ -104,28 +106,5 @@
   ],
   "coc.source.iced.enable": true,
   "rust.clippy_preference": "on",
-  "cSpell.language": "en-GB",
-  "cSpell.userWords": [
-    "Aragon",
-    "Cmds",
-    "Lato",
-    "Millis",
-    "Roboto",
-    "Scrive",
-    "admins",
-    "dismissible",
-    "followup",
-    "hstatus",
-    "instrs",
-    "notif",
-    "openid",
-    "pipeable",
-    "resp",
-    "setup",
-    "shortcut",
-    "solarized",
-    "spec",
-    "tailwindcss",
-    "webcomponents"
-  ]
+  "cSpell.language": "en-GB"
 }
