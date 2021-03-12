@@ -129,6 +129,9 @@ compinit
 # Completion for kitty
 kitty + complete setup zsh | source /dev/stdin
 
+# better autocomplete for MAKEFILEs
+zstyle ':completion:*:*:make:*' tag-order 'targets'
+
 # quick CLI utility: 
 source ~/.scripts/confirm.sh
 if [ -e /Users/leojpod/.nix-profile/etc/profile.d/nix.sh ]; then . /Users/leojpod/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
