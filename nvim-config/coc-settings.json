@@ -99,6 +99,7 @@
     "html",
     "elixir",
     "eelixir",
+    "leelixir",
     "markdown",
     "YAML",
     "rust",

@@ -19,6 +19,7 @@ plugins=(
   elixir
   brew
   history-substring-search
+  zsh-nvm-auto-switch
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -87,11 +88,11 @@ fi
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 
-# Setup asdf
-# . $HOME/.asdf/asdf.sh
-export PATH="$HOME/.asdf/bin:$PATH"
-# Hook direnv into your shell.
-eval "$(asdf exec direnv hook bash)"
+# # Setup asdf
+# # . $HOME/.asdf/asdf.sh
+# export PATH="$HOME/.asdf/bin:$PATH"
+# # Hook direnv into your shell.
+# eval "$(asdf exec direnv hook bash)"
 
 # source ~/.nix-profile/etc/profile.d/nix.sh
 
@@ -109,7 +110,10 @@ if [ -f '/Users/leojeusset/google-cloud-sdk/completion.zsh.inc' ]; then . '/User
 # rust stuff
 export PATH="$PATH:$HOME/.cargo/bin"
 
+# some yarn think I don't remember
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+
+# nice stuff for clojure
 export PATH="$PATH:$HOME/.vim/plugged/vim-iced/bin"
 
 # elm completions
@@ -138,3 +142,11 @@ if [ -e /Users/leojpod/.nix-profile/etc/profile.d/nix.sh ]; then . /Users/leojpo
 alias night-shift='export DAY_NIGHT="NIGHT"; kitty @set-colors ${KITTY_CONFIG_DIRECTORY:-~/.config/kitty}/night-colors.conf'
 
 alias day-shift='export DAY_NIGHT="DAY"; kitty @set-colors ${KITTY_CONFIG_DIRECTORY:-~/.config/kitty}/day-colors.conf'
+
+
+# Android stuff 
+export ANDROID_HOME=$HOME/Library/Android/sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/tools/bin
+export PATH=$PATH:$ANDROID_HOME/platform-tools
