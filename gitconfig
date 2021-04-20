@@ -38,3 +38,5 @@
 	keepBackup = false
 [pull]
 	rebase = false
+[github]
+	user = leojpod

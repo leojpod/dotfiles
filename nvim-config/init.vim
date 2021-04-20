@@ -56,6 +56,10 @@ Plug 'AGhost-7/critiq.vim'
 " shameless plug to my first plugin
 Plug 'leojpod/gitstandup.vim'
 
+" Gist stuff
+Plug 'mattn/webapi-vim'
+Plug 'mattn/vim-gist'
+
 " Language specific stuff
 
 "" - JavaScript:

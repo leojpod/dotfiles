@@ -10,6 +10,7 @@ export GPG_TTY=$(tty)
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="kolo"
 DEFAULT_USER="leojpod"
+NVM_AUTOLOAD=1
 
 plugins=(
   aws
@@ -19,7 +20,7 @@ plugins=(
   elixir
   brew
   history-substring-search
-  zsh-nvm-auto-switch
+  nvm
 )
 
 source $ZSH/oh-my-zsh.sh
