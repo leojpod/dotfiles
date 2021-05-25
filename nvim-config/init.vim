@@ -52,6 +52,8 @@ Plug 'junegunn/limelight.vim'
 Plug 'ap/vim-css-color'
 Plug 'severin-lemaignan/vim-minimap'
 Plug 'AGhost-7/critiq.vim'
+Plug 'preservim/tagbar' " nice tag bar for the side
+Plug 'vim-test/vim-test' " testing tool
 
 " shameless plug to my first plugin
 Plug 'leojpod/gitstandup.vim'
@@ -232,6 +234,9 @@ noremap gb :tabprevious <CR>
 nnoremap <silent> <Space> @=(foldlevel('.')?'za':"\<Space>")<CR>
 vnoremap <Space> zf
 
+" toggle tagbar
+nmap <leader>b :TagbarToggle <CR>
+
 " general coding things:
 source ~/.config/nvim/configs/tools/coc.vim
 source ~/.config/nvim/configs/tools/nerdcommenter.vim
@@ -240,6 +245,7 @@ source ~/.config/nvim/configs/tools/minibufexpl.vim
 source ~/.config/nvim/configs/tools/ack.vim
 source ~/.config/nvim/configs/tools/indent-guides.vim
 source ~/.config/nvim/configs/tools/startify.vim
+source ~/.config/nvim/configs/tools/test.vim
 source ~/.config/nvim/configs/tools/tmux-navigator.vim
 
 " Language specific stuff
