@@ -89,7 +89,7 @@ Plug 'posva/vim-vue'
 Plug 'jparise/vim-graphql'
 
 " - Elm:
-Plug 'andys8/vim-elm-syntax', { 'for': ['elm'] }
+" Plug 'andys8/vim-elm-syntax', { 'for': ['elm'] }
 
 "" - Haskell:
 Plug 'neovimhaskell/haskell-vim'

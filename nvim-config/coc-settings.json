@@ -107,5 +107,8 @@
   ],
   "coc.source.iced.enable": true,
   "rust.clippy_preference": "on",
-  "cSpell.language": "en-GB"
+  "cSpell.language": "en-GB",
+  "cSpell.userWords": [
+    "maizzle"
+  ]
 }
