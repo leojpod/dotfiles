@@ -1,5 +1,5 @@
-nmap <leader> tn :TestNearest<CR>
-nmap <leader> tf :TestFile<CR>
-nmap <leader> ts :TestSuite<CR>
-nmap <leader> tl :TestLast<CR>
-nmap <leader> tg :TestVisit<CR>
+nmap <Leader>tn :TestNearest<CR>
+nmap <Leader>tf :TestFile<CR>
+nmap <Leader>ts :TestSuite<CR>
+nmap <Leader>tl :TestLast<CR>
+nmap <Leader>tg :TestVisit<CR>
