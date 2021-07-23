@@ -115,6 +115,10 @@ Plug 'liquidz/vim-iced', {'for': 'clojure'}
 Plug 'liquidz/vim-iced-coc-source', {'for': 'clojure'}
 Plug 'vim-scripts/VimClojure'
 
+"" - Racket
+Plug 'wlangstroth/vim-racket' " base thing for scheme and racket
+Plug 'kovisoft/slimv'
+
 "" - Markdown:
 Plug 'Alok/notational-fzf-vim'
 Plug 'reedes/vim-pencil'       " Super powered writing things
