@@ -12,11 +12,13 @@ ZSH_THEME="kolo"
 DEFAULT_USER="leojpod"
 NVM_AUTOLOAD=1
 
+
 plugins=(
   aws
   git
   docker
-  docker-compose
+  # removing docker-compose for now since it breaks the omz loading
+  # docker-compose
   elixir
   brew
   history-substring-search
@@ -139,8 +141,9 @@ zstyle ':completion:*:*:make:*' tag-order 'targets'
 
 # quick CLI utility: 
 source ~/.scripts/confirm.sh
-if [ -e /Users/leojpod/.nix-profile/etc/profile.d/nix.sh ]; then . /Users/leojpod/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
-[ -f "/Users/leojpod/.ghcup/env" ] && source "/Users/leojpod/.ghcup/env" # ghcup-env
+
+# if [ -e /Users/leojpod/.nix-profile/etc/profile.d/nix.sh ]; then . /Users/leojpod/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
+# [ -f "/Users/leojpod/.ghcup/env" ] && source "/Users/leojpod/.ghcup/env" # ghcup-env
 
 
 alias night-shift='export DAY_NIGHT="NIGHT"; kitty @set-colors ${KITTY_CONFIG_DIRECTORY:-~/.config/kitty}/night-colors.conf'
@@ -148,9 +151,3 @@ alias night-shift='export DAY_NIGHT="NIGHT"; kitty @set-colors ${KITTY_CONFIG_DI
 alias day-shift='export DAY_NIGHT="DAY"; kitty @set-colors ${KITTY_CONFIG_DIRECTORY:-~/.config/kitty}/day-colors.conf'
 
 
-# Android stuff 
-export ANDROID_HOME=$HOME/Library/Android/sdk
-export PATH=$PATH:$ANDROID_HOME/emulator
-export PATH=$PATH:$ANDROID_HOME/tools
-export PATH=$PATH:$ANDROID_HOME/tools/bin
-export PATH=$PATH:$ANDROID_HOME/platform-tools

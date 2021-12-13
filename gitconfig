@@ -29,6 +29,7 @@
 	required = true
 [init]
   templatedir = ~/.git-templates
+	defaultBranch = main
 [merge]
 	tool = diffconflicts
 [mergetool "diffconflicts"]

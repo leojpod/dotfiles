@@ -128,6 +128,7 @@ Plug 'reedes/vim-litecorrect'  " Better autocorrections
 Plug 'junegunn/goyo.vim'       " Spacing
 Plug 'godlygeek/tabular'       " Create tables
 Plug 'plasticboy/vim-markdown' " Markdown
+Plug 'vim-pandoc/vim-pandoc-syntax'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  } " why not having a preview of the Markdown while editing it? 
 
 "" - Rest:

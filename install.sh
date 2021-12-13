@@ -9,6 +9,9 @@
 brew install zsh zsh-completions
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
+# install neovim (yep)
+brew install neovim
+
 # install tmux
 brew install tmux
 
@@ -28,12 +31,9 @@ brew install bat
 # make sure we can sign with gpg
 export GPG_TTY=$(tty)
 
-## TODO check if we're on a mac or not
 # thefuck
 brew install thefuck
 
-
-## TODO check if we're on a mac or not
 # install the search stuff
 brew install ripgrep
 
@@ -48,6 +48,8 @@ brew install \
 # install npm
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.36.0/install.sh | bash
 
+# install kitty 
+curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin
 
 
 # install rustup
