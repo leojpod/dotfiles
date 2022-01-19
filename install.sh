@@ -62,13 +62,18 @@ rustup completions zsh > ~/.zfunc/_rustup
 # haskell stack
 curl -sSL https://get.haskellstack.org/ | sh
 
+# install elixir
+brew install elixir
+# install hex for elixir
+mix local.hex
+# and phoenix while we're at it
+mix archive.install hex phx_new
 
 ##################
 # setup for nvim #
 ##################
 
 # make sure python 3 is installed
-## TODO check if we're on a mac or not
 brew install python
 pip3 install neovim
 

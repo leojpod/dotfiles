@@ -12,8 +12,14 @@ autocmd FileType typescript syn clear foldBraces
 autocmd FileType javascript nnoremap <silent> <buffer> gb :TernDef<CR>
 autocmd FileType typescript nnoremap <silent> <buffer> gb :TernDef<CR>
 
-" setup tsuquyomi
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
-" let g:tsuquyomi_disable_quickfix = 1
-let g:syntastic_typescript_checkers = ['tsuquyomi']
+"" setup tsuquyomi
+" let g:syntastic_check_on_open = 1
+" let g:syntastic_check_on_wq = 0
+"" let g:tsuquyomi_disable_quickfix = 1
+" let g:syntastic_typescript_checkers = ['tsuquyomi']
+
+augroup ReactFiletypes
+  autocmd!
+  autocmd BufRead,BufNewFile *.jsx set filetype=javascriptreact
+  autocmd BufRead,BufNewFile *.tsx set filetype=typescriptreact
+augroup END

@@ -21,7 +21,7 @@ Plug 'ryanoasis/vim-devicons' " Fancy 'icons' everywhere in the editor
 Plug 'Shougo/denite.nvim' " Black magic asynchronous support for nvim
 Plug 'lifepillar/vim-solarized8' " Color Theme
 Plug 'tpope/vim-unimpaired' " general set of options
-Plug 'fholgado/minibufexpl.vim' " quickly see and close buffers
+" Plug 'fholgado/minibufexpl.vim' " quickly see and close buffers
 Plug 'jszakmeister/vim-togglecursor' " supposedy allow to change the shape of the cursor in vim, doesn't work on Kitty within byobu ...
 Plug 'mileszs/ack.vim' " Quick search with Ack or Ag, I used far instead often ...
 Plug 'dkprice/vim-easygrep' " search and replace option that I should use more often
@@ -260,7 +260,7 @@ endfunction
 source ~/.config/nvim/configs/tools/coc.vim
 source ~/.config/nvim/configs/tools/nerdcommenter.vim
 source ~/.config/nvim/configs/tools/multiple-cursors.vim
-source ~/.config/nvim/configs/tools/minibufexpl.vim
+" source ~/.config/nvim/configs/tools/minibufexpl.vim
 source ~/.config/nvim/configs/tools/ack.vim
 source ~/.config/nvim/configs/tools/indent-guides.vim
 source ~/.config/nvim/configs/tools/startify.vim
