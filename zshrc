@@ -17,9 +17,8 @@ plugins=(
   aws
   git
   docker
-  # removing docker-compose for now since it breaks the omz loading
-  # docker-compose
   elixir
+  mix
   brew
   history-substring-search
   nvm

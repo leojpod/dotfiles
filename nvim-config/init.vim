@@ -242,6 +242,20 @@ vnoremap <Space> zf
 " toggle tagbar
 nmap <leader>b :TagbarToggle <CR>
 
+" setup terminals quickly (Aka zsh ninja)
+function! MyTerminalLayout() 
+  tabnew
+  terminal
+  vsplit
+  terminal
+  split
+  terminal
+  vsplit
+  terminal
+endfunction
+
+:command! -nargs=0 Terms call MyTerminalLayout()
+
 " general coding things:
 source ~/.config/nvim/configs/tools/coc.vim
 source ~/.config/nvim/configs/tools/nerdcommenter.vim
