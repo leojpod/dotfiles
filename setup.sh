@@ -32,4 +32,7 @@ ln -s $CURRENT_DIR/git/git-templates $HOME/.git-templates
 rm -fr $HOME/.tool-versions
 ln -s $CURRENT_DIR/tool-versions $HOME/.tool-versions
 
+rm -fr $HOME/.oh-my-zsh/custom/themes
+ln -s $CURRENT_DIR/oh-my-zsh-custom-themes $HOME/.oh-my-zsh/custom/themes
+
 echo CONFIGURATIONS LINKED.
