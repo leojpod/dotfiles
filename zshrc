@@ -22,6 +22,7 @@ plugins=(
   brew
   history-substring-search
   nvm
+  nix-shell
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -141,7 +142,7 @@ zstyle ':completion:*:*:make:*' tag-order 'targets'
 # quick CLI utility: 
 source ~/.scripts/confirm.sh
 
-# if [ -e /Users/leojpod/.nix-profile/etc/profile.d/nix.sh ]; then . /Users/leojpod/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
+if [ -e /Users/leojpod/.nix-profile/etc/profile.d/nix.sh ]; then . /Users/leojpod/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
 # [ -f "/Users/leojpod/.ghcup/env" ] && source "/Users/leojpod/.ghcup/env" # ghcup-env
 
 

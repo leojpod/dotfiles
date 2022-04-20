@@ -26,7 +26,7 @@ Plug 'jszakmeister/vim-togglecursor' " supposedy allow to change the shape of th
 Plug 'mileszs/ack.vim' " Quick search with Ack or Ag, I used far instead often ...
 Plug 'dkprice/vim-easygrep' " search and replace option that I should use more often
 Plug 'brooth/far.vim' " Find and Replace, does more or less the same as vim-easygrep, I should really keep only one of them ...
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' } " fuzzy finder support
+Plug 'junegunn/fzf', { 'do': { -> fzf#install()} } " fuzzy finder support
 Plug 'junegunn/fzf.vim' " fuzzy finder with more options (built on top of fzf)
 Plug 'christoomey/vim-tmux-navigator' " tmux integration (works with byobu if tmux is the engine used there
 Plug 'Shougo/vimproc.vim', {'do': 'make'} " apparently still required for some plugins ...
@@ -39,6 +39,7 @@ Plug 'rhysd/vim-grammarous'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'sheerun/vim-polyglot'
 Plug 'airblade/vim-gitgutter' " Git diff next to the line number
+Plug 'APZelos/blamer.nvim' " super charged git explorer 
 Plug 'tpope/vim-fugitive' " Git support
 Plug 'jreybert/vimagit' " this provide the brilliant :Magic command, an absolute must have!
 Plug 'whiteinge/diffconflicts'
