@@ -114,7 +114,7 @@ if [ -f '/Users/leojeusset/google-cloud-sdk/completion.zsh.inc' ]; then . '/User
 export PATH="$PATH:$HOME/.cargo/bin"
 
 # some yarn think I don't remember
-export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+export PATH="$PATH:$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin"
 
 # nice stuff for clojure
 export PATH="$PATH:$HOME/.vim/plugged/vim-iced/bin"
