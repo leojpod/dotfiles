@@ -11,6 +11,7 @@
     git
     kitty
     zsh
+    zsh-nix-shell
     zsh-completions
     pinentry
     pinentry-curses

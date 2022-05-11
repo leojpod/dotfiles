@@ -1,6 +1,12 @@
 { config, pkgs, ... }:
 
 {
+  environment.systemPackages = with pkgs; [
+    zsh
+    zsh-nix-shell
+    zsh-completions
+  ];
+
   programs.zsh = {
     enable = true;
     ohMyZsh = {
@@ -10,10 +16,8 @@
         "aws"
         "git"
         "docker"
-        "elixir"
         "mix"
         "history-substring-search"
-        "nix-shell"
       ];
     };
     setOptions = [
