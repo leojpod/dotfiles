@@ -1,25 +1,25 @@
 { config, pkgs, ... }:
 
 {
-  programs.fzf = {
-    enable = true;
-    tmux = {
-      enableShellIntegration = true;
-      shellIntegrationOptions = [ "-d 35%" ];
-    };
-  };
+  # programs.fzf = {
+  #   enable = true;
+  #   tmux = {
+  #     enableShellIntegration = true;
+  #     shellIntegrationOptions = [ "-d 35%" ];
+  #   };
+  # };
   programs.tmux = {
     enable = true;
     clock24 = true;
     terminal = "screen-256color";
     plugins = [
-      { plugin = pkgs.tmuxPlugins.sensible; }
-      { plugin = pkgs.tmuxPlugins.resurrect; }
-      { plugin = pkgs.tmuxPlugins.continuum; }
-      { plugin = pkgs.tmuxPlugins.cpu; }
-      { plugin = pkgs.tmuxPlugins.pain-control; }
-      { plugin = pkgs.tmuxPlugins.prefix-highlight; }
-      { plugin = pkgs.tmuxPlugins.vim-tmux-navigator; }
+      pkgs.tmuxPlugins.sensible
+      pkgs.tmuxPlugins.resurrect
+      pkgs.tmuxPlugins.continuum
+      pkgs.tmuxPlugins.cpu
+      pkgs.tmuxPlugins.pain-control
+      pkgs.tmuxPlugins.prefix-highlight
+      pkgs.tmuxPlugins.vim-tmux-navigator
     ];
     extraConfig = ''
       set -g focus-events on

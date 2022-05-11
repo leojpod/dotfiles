@@ -3,17 +3,17 @@
 {
   programs.zsh = {
     enable = true;
-    oh-my-zsh = {
+    ohMyZsh = {
       enable = true;
       theme = "kolo";
       plugins = [
         "aws"
-	"git"
-	"docker"
-	"elixir"
-	"mix"
-	"history-substring-search"
-	"nix-shell"
+        "git"
+        "docker"
+        "elixir"
+        "mix"
+        "history-substring-search"
+        "nix-shell"
       ];
     };
     setOptions = [
@@ -22,5 +22,7 @@
       "magic_equal_subst"
     ];
   };
+
+  users.defaultUserShell = pkgs.zsh;
 }
 
