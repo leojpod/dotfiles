@@ -10,9 +10,6 @@
   environment.systemPackages = with pkgs; [
     git
     kitty
-    zsh
-    zsh-nix-shell
-    zsh-completions
     pinentry
     pinentry-curses
     bat
@@ -21,6 +18,8 @@
     fzf
     nerdfonts
     nodejs
+    python
+    python3
     git-standup
   ];
 

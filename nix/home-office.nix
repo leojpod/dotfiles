@@ -5,5 +5,6 @@
     firefox
     thunderbird
     slack
+    authy
   ];
 }

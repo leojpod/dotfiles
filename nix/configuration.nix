@@ -6,13 +6,18 @@
 
 {
   imports =
-    [ <nixos-hardware/framework>
+    [ <home-manager/nixos>
+      <nixos-hardware/framework>
       # Include the results of the hardware scan.
       ./hardware-configuration.nix
       ./dev-tools.nix
       ./home-office.nix
       ./home-manager-setup.nix
     ];
+  # No idea where it came from but ... 
+  nixpkgs.config.permittedInsecurePackages = [
+    "electron-9.4.4"
+  ];
 
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
