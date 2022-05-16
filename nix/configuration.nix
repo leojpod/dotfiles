@@ -12,7 +12,6 @@
       ./hardware-configuration.nix
       ./dev-tools.nix
       ./home-office.nix
-      ./home-manager-setup.nix
     ];
   # No idea where it came from but ... 
   nixpkgs.config.permittedInsecurePackages = [

@@ -6,9 +6,12 @@
       ./zsh.nix
     ];
 
+  # TODO move some stuff like node over to the home-manager config rather than the general one. 
+
   # tools and apps
   environment.systemPackages = with pkgs; [
     git
+    cpustat
     kitty
     pinentry
     pinentry-curses
@@ -21,8 +24,11 @@
     python
     python3
     git-standup
+    elmPackages.elm-language-server
   ];
 
+  # required for some plugin on neovim
+  programs.java.enable = true;
 
   services.pcscd.enable = true;
   programs.gnupg.agent = {

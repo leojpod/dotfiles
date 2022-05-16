@@ -6,5 +6,9 @@
     thunderbird
     slack
     authy
+    appimage-run
+    altair
+    headsetcontrol
+    qgis
   ];
 }
