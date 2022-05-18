@@ -3,6 +3,7 @@
 {
   environment.systemPackages = with pkgs; [
     firefox
+    dropbox
     thunderbird
     slack
     authy

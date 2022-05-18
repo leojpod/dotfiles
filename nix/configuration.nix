@@ -2,7 +2,7 @@
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
-{ config, pkgs, ... }:
+{ config, pkgs, lib, ... }:
 
 {
   imports =
@@ -17,6 +17,17 @@
   nixpkgs.config.permittedInsecurePackages = [
     "electron-9.4.4"
   ];
+
+  # power tuning
+  powerManagement = {
+    enable = true;
+    powertop.enable = true;
+  };
+
+  services.sysstat.enable = true;
+
+  # required for UHK agent
+  security.polkit.enable = true;
 
   # Bootloader.
   boot.loader.systemd-boot.enable = true;

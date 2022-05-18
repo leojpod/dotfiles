@@ -25,7 +25,7 @@
 
   # home manager version
   home-manager.users.leojpod.programs = {
-    zfz = {
+    fzf = {
       enable = true;
       tmux = {
         enableShellIntegration = true;
@@ -35,19 +35,21 @@
     tmux = {
       enable = true;
       plugins = [
-        pkgs.tmuxPlugins.sensible
-        pkgs.tmuxPlugins.cpu
-        pkgs.tmuxPlugins.resurrect
+        { plugin = pkgs.tmuxPlugins.sensible; }
+        { plugin = pkgs.tmuxPlugins.cpu; }
+        { plugin = pkgs.tmuxPlugins.resurrect; }
+        { plugin = pkgs.tmuxPlugins.pain-control; }
+        { plugin = pkgs.tmuxPlugins.prefix-highlight; }
+        { plugin = pkgs.tmuxPlugins.vim-tmux-navigator; }
+        { plugin = pkgs.tmuxPlugins.sysstat; }
         {
           plugin = pkgs.tmuxPlugins.continuum;
           extraConfig = ''
             set -g @continuum-boot 'on'
-            set -g @continuum-boot-options 'iterm'
+            set -g @continuum-restore 'on'
+            set -g @continuum-boot-options 'kitty,fullscreen'
             '';
         }
-        pkgs.tmuxPlugins.pain-control
-        pkgs.tmuxPlugins.prefix-highlight
-        pkgs.tmuxPlugins.vim-tmux-navigator
       ];
       extraConfig = ''
         set -g focus-events on
@@ -66,8 +68,8 @@
         
         set -g status-interval 10     # redraw status line every 10 seconds
         
-        set -g monitor-activity off
-        set -g visual-activity off
+        set -g monitor-activity on
+        set -g visual-activity on
         
 
         # add some more shortcut for the window/pane navigation
