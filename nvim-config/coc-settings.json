@@ -33,13 +33,7 @@
     "elmLS": {
       "command": "elm-language-server",
       "filetypes": ["elm"],
-      "rootPatterns": ["elm.json"],
-      "initializationOptions": {
-        "elmPath": "elm",
-        "elmTestPath": "elm-test",
-        "elmFormatPath": "elm-format",
-        "elmAnalyseTrigger": "save"
-      }
+      "rootPatterns": ["elm.json"]
     },
     "graphql": {
       "command": "graphql-lsp",

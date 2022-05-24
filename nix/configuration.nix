@@ -24,6 +24,10 @@
     powertop.enable = true;
   };
 
+  environment.systemPackages = with pkgs; [
+    sysstat
+  ];
+
   services.sysstat.enable = true;
 
   # required for UHK agent

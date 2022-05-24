@@ -11,5 +11,8 @@
     altair
     headsetcontrol
     qgis
+    obs-studio
+    mendeley
+    discord
   ];
 }

@@ -28,7 +28,10 @@
   ];
 
   # required for some plugin on neovim
-  programs.java.enable = true;
+  home-manager.users.leojpod.programs.java = {
+    enable = true;
+    package = pkgs.jdk;
+  };
 
   services.pcscd.enable = true;
   programs.gnupg.agent = {
