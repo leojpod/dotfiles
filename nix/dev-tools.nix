@@ -25,7 +25,12 @@
     python3
     git-standup
     elmPackages.elm-language-server
+    todo-txt-cli
+    exercism
+    wget
   ];
+
+  home-manager.users.leojpod.programs.sqls.enable = true;
 
   # required for some plugin on neovim
   home-manager.users.leojpod.programs.java = {

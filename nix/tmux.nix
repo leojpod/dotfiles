@@ -52,6 +52,7 @@
         }
       ];
       extraConfig = ''
+        set  -g default-terminal "kitty"
         set -g focus-events on
         set -g mouse on
         
