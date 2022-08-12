@@ -78,7 +78,6 @@ let
 in
 {
   environment.systemPackages = with pkgs; [
-    zsh
     zsh-completions
     direnv
     nix-direnv

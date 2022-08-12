@@ -3,6 +3,7 @@
   "prettier.tslintIntegration": true,
   "prettier.eslintIntegration": true,
   "diagnostic.enableSign": true,
+  "ltex.java.path": "~/.nix-profile/",
   "tslint": {
     "enable": true,
     "run": "onSave",
@@ -67,8 +68,8 @@
       "command": "sql-language-server",
       "args": ["up", "--method", "stdio"],
       "filetypes": ["sql", "mysql"]
-    }
-  },
+    } 
+  }, 
   "git.addedSign.hlGroup": "GitGutterAdd",
   "git.changedSign.hlGroup": "GitGutterChange",
   "git.removedSign.hlGroup": "GitGutterDelete",

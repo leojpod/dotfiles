@@ -6,6 +6,7 @@ if empty(glob('~/.local/share/nvim/site/autoload/plug.vim')) " Auto install Plug
 endif
 
 set mouse=a
+set clipboard+=unnamedplus
 
 " specify a directory for plugins
 " - For Neovim: ~/.local/share/nvim/plugged
@@ -70,7 +71,7 @@ Plug 'Quramy/vim-js-pretty-template'
 Plug 'isruslan/vim-es6'
 
 "" - TypeScript :
-Plug 'Quramy/tsuquyomi'
+" Plug 'Quramy/tsuquyomi'
 " Plug 'rudism/deoplete-tsuquyomi'
 Plug 'leafgarland/typescript-vim'
 
@@ -256,6 +257,18 @@ function! MyTerminalLayout()
 endfunction
 
 :command! -nargs=0 Terms call MyTerminalLayout()
+
+" setup mini layout quickly
+function! MyFewTerminalLayout() 
+  tabnew
+  terminal
+  vsplit
+  terminal
+  split
+  terminal
+endfunction
+
+:command! -nargs=0 FewTerms call MyFewTerminalLayout()
 
 " general coding things:
 source ~/.config/nvim/configs/tools/coc.vim

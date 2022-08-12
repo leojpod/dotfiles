@@ -12,6 +12,11 @@
     qgis
     mendeley
 
+
+    #latex 
+    # choosing the full scheme stuff 'cause I've a TB harddrive :D
+    texlive.combined.scheme-full
+
     # messaging apps
     slack
     discord
@@ -40,6 +45,9 @@
     # media players
     vlc
     musikcube
+
+    #eye saving
+    redshift
 
   ];
 

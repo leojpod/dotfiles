@@ -1,28 +1,6 @@
 { config, pkgs, ... }:
 
 {
-  # programs.fzf = {
-  #   enable = true;
-  #   tmux = {
-  #     enableShellIntegration = true;
-  #     shellIntegrationOptions = [ "-d 35%" ];
-  #   };
-  # };
-  # programs.tmux = {
-    # enable = true;
-    # clock24 = true;
-    # terminal = "screen-256color";
-    # plugins = [
-      # pkgs.tmuxPlugins.sensible
-      # pkgs.tmuxPlugins.resurrect
-      # pkgs.tmuxPlugins.continuum
-      # pkgs.tmuxPlugins.cpu
-      # pkgs.tmuxPlugins.pain-control
-      # pkgs.tmuxPlugins.prefix-highlight
-      # pkgs.tmuxPlugins.vim-tmux-navigator
-    # ];
-  # };
-
   # home manager version
   home-manager.users.leojpod.programs = {
     fzf = {
@@ -41,18 +19,16 @@
         { plugin = pkgs.tmuxPlugins.pain-control; }
         { plugin = pkgs.tmuxPlugins.prefix-highlight; }
         { plugin = pkgs.tmuxPlugins.vim-tmux-navigator; }
-        { plugin = pkgs.tmuxPlugins.sysstat; }
-        {
-          plugin = pkgs.tmuxPlugins.continuum;
-          extraConfig = ''
-            set -g @continuum-boot 'on'
-            set -g @continuum-restore 'on'
-            set -g @continuum-boot-options 'kitty,fullscreen'
-            '';
-        }
+        # { plugin = pkgs.tmuxPlugins.sysstat; }
+        # {
+          # plugin = pkgs.tmuxPlugins.continuum;
+          # extraConfig = ''
+            # # set -g @continuum-boot 'on'
+            # # set -g @continuum-restore 'on'
+            # '';
+        # }
       ];
       extraConfig = ''
-        set  -g default-terminal "kitty"
         set -g focus-events on
         set -g mouse on
         

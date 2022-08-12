@@ -21,6 +21,7 @@
     fzf
     nerdfonts
     nodejs
+    yarn
     python
     python3
     git-standup
@@ -28,6 +29,9 @@
     todo-txt-cli
     exercism
     wget
+    xclip
+    pixelorama
+    tailscale
   ];
 
   home-manager.users.leojpod.programs.sqls.enable = true;
@@ -61,5 +65,12 @@
         call SourceIfExists("~/.config/nvim/init.vim")
       '';
     };
+  };
+
+  programs._1password.enable = true;
+  programs._1password-gui.enable = true;
+  services.tailscale = {
+    enable = true;
+    port = 0;
   };
 }
