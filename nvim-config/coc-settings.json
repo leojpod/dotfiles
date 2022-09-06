@@ -162,6 +162,7 @@
     "fontawesome",
     "fortawesome",
     "glsdefs",
+    "homescreen",
     "homoscedasticity",
     "kinto",
     "maizzle",
@@ -172,6 +173,7 @@
     "postcssrc",
     "singlelinecheck",
     "synctex",
+    "tailwindcss",
     "unbiasness",
     "webcomponents",
     "xaxis"

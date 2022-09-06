@@ -29,8 +29,15 @@
     # video editors - TODO keep only one of them
     shotcut
     pitivi
+
     # music editors
-    zrythm
+    # TODO keep only 1 or 2
+    lmms
+    rosegarden
+    jack_capture
+    traverso
+    ardour
+    muse
 
     # for when latex/R isn't an option
     libreoffice
@@ -38,6 +45,7 @@
     # image edition tools
     gimp
     image-roll
+    drawio
 
     # PDF manipulation
     masterpdfeditor
