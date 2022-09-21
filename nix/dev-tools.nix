@@ -32,6 +32,7 @@
     xclip
     pixelorama
     tailscale
+    ncdu
   ];
 
   home-manager.users.leojpod.programs.sqls.enable = true;
