@@ -11,7 +11,11 @@
   # tools and apps
   environment.systemPackages = with pkgs; [
     git
+    docker
+    docker-client
+    docker-compose
     cpustat
+    niv
     kitty
     pinentry
     pinentry-curses
@@ -26,6 +30,10 @@
     python3
     git-standup
     elmPackages.elm-language-server
+    nodePackages.typescript
+    nodePackages.prettier
+    nodePackages.coc-prettier
+    nodePackages.coc-r-lsp
     todo-txt-cli
     exercism
     wget

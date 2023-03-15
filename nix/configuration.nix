@@ -10,14 +10,16 @@
       <nixos-hardware/framework>
       # Include the results of the hardware scan.
       ./hardware-configuration.nix
+      ./overlays.nix
       ./dev-tools.nix
       ./home-office.nix
     ];
   # No idea where it came from but ... 
   nixpkgs.config.permittedInsecurePackages = [
     "electron-9.4.4"
+    "qtwebkit-5.212.0-alpha4"
+    "python-2.7.18.6"
   ];
-
   # power tuning
   powerManagement = {
     enable = true;
@@ -132,6 +134,7 @@
   networking.firewall = {
     trustedInterfaces = [ "tailscale0" ];
     allowedTCPPortRanges = [{ from = 22; to = 443; }];
+    allowedTCPPorts = [ 3000 ];
     allowedUDPPorts = [ config.services.tailscale.port ];
     checkReversePath = "loose";
   };

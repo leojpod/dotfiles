@@ -22,8 +22,6 @@ Plug 'ryanoasis/vim-devicons' " Fancy 'icons' everywhere in the editor
 Plug 'Shougo/denite.nvim' " Black magic asynchronous support for nvim
 Plug 'lifepillar/vim-solarized8' " Color Theme
 Plug 'tpope/vim-unimpaired' " general set of options
-" Plug 'fholgado/minibufexpl.vim' " quickly see and close buffers
-Plug 'jszakmeister/vim-togglecursor' " supposedy allow to change the shape of the cursor in vim, doesn't work on Kitty within byobu ...
 Plug 'mileszs/ack.vim' " Quick search with Ack or Ag, I used far instead often ...
 Plug 'dkprice/vim-easygrep' " search and replace option that I should use more often
 Plug 'brooth/far.vim' " Find and Replace, does more or less the same as vim-easygrep, I should really keep only one of them ...
@@ -56,6 +54,7 @@ Plug 'severin-lemaignan/vim-minimap'
 Plug 'AGhost-7/critiq.vim'
 Plug 'preservim/tagbar' " nice tag bar for the side
 Plug 'vim-test/vim-test' " testing tool
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
 " shameless plug to my first plugin
 Plug 'leojpod/gitstandup.vim'
@@ -65,6 +64,10 @@ Plug 'mattn/webapi-vim'
 Plug 'mattn/vim-gist'
 
 " Language specific stuff
+
+"" - Lilypond
+Plug 'martineausimon/nvim-lilypond-suite'
+Plug 'MunifTanjim/nui.nvim'
 
 "" - JavaScript:
 Plug 'Quramy/vim-js-pretty-template'
@@ -183,7 +186,7 @@ if $DAY_NIGHT ==# "NIGHT"
   colorscheme solarized8
 else
   set background=light
-  colorscheme solarized8_flat
+  colorscheme solarized8
 endif
 
 "" General configuration section
@@ -282,6 +285,9 @@ source ~/.config/nvim/configs/tools/test.vim
 source ~/.config/nvim/configs/tools/tmux-navigator.vim
 
 " Language specific stuff
+
+"" - Lilypond 
+source ~/.config/nvim/configs/languages/lilypond.vim
 
 "" - JavaScript:
 

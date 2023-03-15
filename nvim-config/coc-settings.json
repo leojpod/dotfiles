@@ -1,6 +1,7 @@
 {
   "tsserver.enableJavascript": true,
   "prettier.tslintIntegration": true,
+  "prettier.resolveGlobalModules": true,
   "prettier.eslintIntegration": true,
   "diagnostic.enableSign": true,
   "ltex.java.path": "~/.nix-profile/",
@@ -172,6 +173,7 @@
     "pdflatex",
     "pickem",
     "postcssrc",
+    "seatsio",
     "singlelinecheck",
     "synctex",
     "tailwindcss",
