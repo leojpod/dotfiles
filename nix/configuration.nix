@@ -134,7 +134,7 @@
   networking.firewall = {
     trustedInterfaces = [ "tailscale0" ];
     allowedTCPPortRanges = [{ from = 22; to = 443; }];
-    allowedTCPPorts = [ 3000 ];
+    allowedTCPPorts = [ 3000 1234 ];
     allowedUDPPorts = [ config.services.tailscale.port ];
     checkReversePath = "loose";
   };

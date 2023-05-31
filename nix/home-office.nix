@@ -11,6 +11,7 @@
 
     qgis
     mendeley
+    ganttproject-bin
 
 
     #latex 
@@ -24,6 +25,7 @@
     discord
     keybase-gui
     tdesktop
+    signal-desktop
 
     # 3D modeling and printing
     cura

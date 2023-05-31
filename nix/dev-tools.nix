@@ -9,11 +9,12 @@
   # TODO move some stuff like node over to the home-manager config rather than the general one. 
 
   # tools and apps
+  virtualisation.docker.rootless = {
+    enable = true;
+    setSocketVariable = true;
+  };
   environment.systemPackages = with pkgs; [
     git
-    docker
-    docker-client
-    docker-compose
     cpustat
     niv
     kitty
