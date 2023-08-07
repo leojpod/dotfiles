@@ -42,6 +42,8 @@
     pixelorama
     tailscale
     ncdu
+    ngrok
+    gnomeExtensions.strongdm
   ];
 
   home-manager.users.leojpod.programs.sqls.enable = true;

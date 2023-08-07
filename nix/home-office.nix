@@ -11,7 +11,8 @@
 
     qgis
     mendeley
-    ganttproject-bin
+
+    xygrib
 
 
     #latex 
@@ -69,6 +70,12 @@
 
   ];
 
+  # # extra bit of thing for opencpn and o-chart data
+  services.udev.extraRules = ''
+    ATTRS{idVendor}=="1547", ATTRS{idProduct}=="1000", MODE="0666"
+    '';
+  services.flatpak.enable = true;
+
   nixpkgs.config.allowUnfree = true;
   home-manager.users.leojpod.nixpkgs.config.allowUnfree = true;
   home-manager.users.leojpod.services = {
@@ -76,9 +83,11 @@
       keybase.enable = true;
       kbfs.enable = true;
       mpd.enable = true;
+      mpd.musicDirectory = "~/Music/mpd";
       fluidsynth.enable = true;
   };
 
+  home-manager.users.leojpod.home.stateVersion = "23.05";
   home-manager.users.leojpod.manual.manpages.enable = false;
   home-manager.users.leojpod.programs = {
     chromium.enable = true;
