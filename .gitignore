@@ -1,1 +1,6 @@
 secrets.sh
+
+# just so coc-prettier shut up a bit
+node_modules/
+package.json
+package-lock.json

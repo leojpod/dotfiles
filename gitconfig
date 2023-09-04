@@ -21,7 +21,7 @@
   co = checkout
   br = branch
   llog = log --date=local
-  yolo = !git add -A && git commit -m \"$(curl --silent --fail http://whatthecommit.com/index.txt) ~ provided by whatthecommit\"
+  yolo = !git add -A && git commit -m \"$(curl --silent --fail https://whatthecommit.com/index.txt) ~ provided by whatthecommit\"
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f

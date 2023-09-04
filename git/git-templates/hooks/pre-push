@@ -1,5 +1,3 @@
-#!/bin/zsh
-
 # recipe stolen from https://hasper.info/git-hook-to-prevent-wip-commits-to-certain-branches/ and adjusted
 # mixed with https://riptutorial.com/git/example/27005/git-pre-push-hook
 

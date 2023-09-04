@@ -6,6 +6,7 @@ if empty(glob('~/.local/share/nvim/site/autoload/plug.vim')) " Auto install Plug
 endif
 
 set mouse=a
+set clipboard+=unnamedplus
 
 " specify a directory for plugins
 " - For Neovim: ~/.local/share/nvim/plugged
@@ -21,8 +22,6 @@ Plug 'ryanoasis/vim-devicons' " Fancy 'icons' everywhere in the editor
 Plug 'Shougo/denite.nvim' " Black magic asynchronous support for nvim
 Plug 'lifepillar/vim-solarized8' " Color Theme
 Plug 'tpope/vim-unimpaired' " general set of options
-" Plug 'fholgado/minibufexpl.vim' " quickly see and close buffers
-Plug 'jszakmeister/vim-togglecursor' " supposedy allow to change the shape of the cursor in vim, doesn't work on Kitty within byobu ...
 Plug 'mileszs/ack.vim' " Quick search with Ack or Ag, I used far instead often ...
 Plug 'dkprice/vim-easygrep' " search and replace option that I should use more often
 Plug 'brooth/far.vim' " Find and Replace, does more or less the same as vim-easygrep, I should really keep only one of them ...
@@ -55,6 +54,7 @@ Plug 'severin-lemaignan/vim-minimap'
 Plug 'AGhost-7/critiq.vim'
 Plug 'preservim/tagbar' " nice tag bar for the side
 Plug 'vim-test/vim-test' " testing tool
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
 " shameless plug to my first plugin
 Plug 'leojpod/gitstandup.vim'
@@ -65,12 +65,16 @@ Plug 'mattn/vim-gist'
 
 " Language specific stuff
 
+"" - Lilypond
+Plug 'martineausimon/nvim-lilypond-suite'
+Plug 'MunifTanjim/nui.nvim'
+
 "" - JavaScript:
 Plug 'Quramy/vim-js-pretty-template'
 Plug 'isruslan/vim-es6'
 
 "" - TypeScript :
-Plug 'Quramy/tsuquyomi'
+" Plug 'Quramy/tsuquyomi'
 " Plug 'rudism/deoplete-tsuquyomi'
 Plug 'leafgarland/typescript-vim'
 
@@ -182,7 +186,7 @@ if $DAY_NIGHT ==# "NIGHT"
   colorscheme solarized8
 else
   set background=light
-  colorscheme solarized8_flat
+  colorscheme solarized8
 endif
 
 "" General configuration section
@@ -257,6 +261,18 @@ endfunction
 
 :command! -nargs=0 Terms call MyTerminalLayout()
 
+" setup mini layout quickly
+function! MyFewTerminalLayout() 
+  tabnew
+  terminal
+  vsplit
+  terminal
+  split
+  terminal
+endfunction
+
+:command! -nargs=0 FewTerms call MyFewTerminalLayout()
+
 " general coding things:
 source ~/.config/nvim/configs/tools/coc.vim
 source ~/.config/nvim/configs/tools/nerdcommenter.vim
@@ -269,6 +285,9 @@ source ~/.config/nvim/configs/tools/test.vim
 source ~/.config/nvim/configs/tools/tmux-navigator.vim
 
 " Language specific stuff
+
+"" - Lilypond 
+source ~/.config/nvim/configs/languages/lilypond.vim
 
 "" - JavaScript:
 

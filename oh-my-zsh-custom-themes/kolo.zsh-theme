@@ -32,5 +32,6 @@ is_nix() {
     echo ''
   fi
 }
+
 # since I didn't want to spend much time on it, I've just highjacked the right prompt instead of adding the indicator to the left side. 
 RPROMPT='$(is_nix)'

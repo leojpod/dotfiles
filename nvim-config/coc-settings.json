@@ -1,8 +1,10 @@
 {
   "tsserver.enableJavascript": true,
   "prettier.tslintIntegration": true,
+  "prettier.resolveGlobalModules": true,
   "prettier.eslintIntegration": true,
   "diagnostic.enableSign": true,
+  "ltex.java.path": "~/.nix-profile/",
   "tslint": {
     "enable": true,
     "run": "onSave",
@@ -33,14 +35,7 @@
     "elmLS": {
       "command": "elm-language-server",
       "filetypes": ["elm"],
-      "rootPatterns": ["elm.json"],
-      "trace.server": "verbose",
-      "initializationOptions": {
-        "elmPath": "elm",
-        "elmTestPath": "elm-test",
-        "elmFormatPath": "elm-format",
-        "elmAnalyseTrigger": "change"
-      }
+      "rootPatterns": ["elm.json"]
     },
     "graphql": {
       "command": "graphql-lsp",
@@ -74,8 +69,8 @@
       "command": "sql-language-server",
       "args": ["up", "--method", "stdio"],
       "filetypes": ["sql", "mysql"]
-    }
-  },
+    } 
+  }, 
   "git.addedSign.hlGroup": "GitGutterAdd",
   "git.changedSign.hlGroup": "GitGutterChange",
   "git.removedSign.hlGroup": "GitGutterDelete",
@@ -153,10 +148,13 @@
   "cSpell.numSuggestions": 8,
   "cSpell.language": "en-GB",
   "cSpell.userWords": [
+    "DBUI",
     "SAFELISTING",
     "Suppl",
+    "VERCEL",
     "apexcharts",
     "arara",
+    "backoffice",
     "biblatex",
     "bibtex",
     "coef",
@@ -166,6 +164,7 @@
     "fontawesome",
     "fortawesome",
     "glsdefs",
+    "homescreen",
     "homoscedasticity",
     "kinto",
     "maizzle",
@@ -174,8 +173,10 @@
     "pdflatex",
     "pickem",
     "postcssrc",
+    "seatsio",
     "singlelinecheck",
     "synctex",
+    "tailwindcss",
     "unbiasness",
     "webcomponents",
     "xaxis"
