@@ -2,6 +2,8 @@
 
 {
   environment.systemPackages = with pkgs; [
+    expressvpn
+
     firefox
     thunderbird
     authy
@@ -75,6 +77,7 @@
     ATTRS{idVendor}=="1547", ATTRS{idProduct}=="1000", MODE="0666"
     '';
   services.flatpak.enable = true;
+  services.teamviewer.enable = true;
 
   nixpkgs.config.allowUnfree = true;
   home-manager.users.leojpod.nixpkgs.config.allowUnfree = true;
