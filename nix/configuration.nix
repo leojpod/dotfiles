@@ -20,6 +20,10 @@
     "qtwebkit-5.212.0-alpha4"
     "python-2.7.18.6"
   ];
+
+  # Allow unfree packages
+  nixpkgs.config.allowUnfree = true;
+
   # power tuning
   powerManagement = {
     enable = true;
@@ -114,8 +118,10 @@
     extraGroups = [ "networkmanager" "wheel" ];
   };
 
-  # Allow unfree packages
-  nixpkgs.config.allowUnfree = true;
+  system.autoUpgrade.enable = true;
+  system.autoUpgrade.allowReboot = false;
+
+
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.

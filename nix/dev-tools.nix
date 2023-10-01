@@ -27,7 +27,6 @@
     nerdfonts
     nodejs
     yarn
-    python
     python3
     git-standup
     elmPackages.elm-language-server
