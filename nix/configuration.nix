@@ -7,7 +7,7 @@
 {
   imports =
     [ <home-manager/nixos>
-      <nixos-hardware/framework>
+      <nixos-hardware/framework/13-inch/11th-gen-intel>
       # Include the results of the hardware scan.
       ./hardware-configuration.nix
       ./overlays.nix
@@ -117,10 +117,6 @@
     description = "Léo";
     extraGroups = [ "networkmanager" "wheel" ];
   };
-
-  system.autoUpgrade.enable = true;
-  system.autoUpgrade.allowReboot = false;
-
 
 
   # Some programs need SUID wrappers, can be configured further or are

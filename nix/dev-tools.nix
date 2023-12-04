@@ -42,7 +42,6 @@
     tailscale
     ncdu
     ngrok
-    gnomeExtensions.strongdm
   ];
 
   home-manager.users.leojpod.programs.sqls.enable = true;
@@ -79,7 +78,10 @@
   };
 
   programs._1password.enable = true;
-  programs._1password-gui.enable = true;
+  programs._1password-gui = {
+    enable = true;
+    polkitPolicyOwners = [ "leojpod" ];
+  };
   services.tailscale = {
     enable = true;
     port = 0;

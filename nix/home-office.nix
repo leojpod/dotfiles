@@ -47,7 +47,12 @@
     ardour
 
     # music sheet editors
-    lilypond
+    # lilypond
+    lilypond-with-fonts
+    mpv
+    timidity
+    soundfont-fluid
+
     musescore
 
     # for when latex/R isn't an option
@@ -70,11 +75,19 @@
     #eye saving
     redshift
 
+    #best keyboard stuff
+    uhk-agent
+    uhk-udev-rules
+
   ];
 
-  # # extra bit of thing for opencpn and o-chart data
   services.udev.extraRules = ''
+    # extra bit of thing for opencpn and o-chart data
     ATTRS{idVendor}=="1547", ATTRS{idProduct}=="1000", MODE="0666"
+    # Ultimate Hacking Keyboard rules
+    SUBSYSTEM=="input", ATTRS{idVendor}=="1d50", ATTRS{idProduct}=="612[0-7]", GROUP="input", MODE="0660"
+    SUBSYSTEMS=="usb", ATTRS{idVendor}=="1d50", ATTRS{idProduct}=="612[0-7]", TAG+="uaccess"
+    KERNEL=="hidraw*", ATTRS{idVendor}=="1d50", ATTRS{idProduct}=="612[0-7]", TAG+="uaccess"
     '';
   services.flatpak.enable = true;
   services.teamviewer.enable = true;
