@@ -1,21 +1,21 @@
 {
   "tsserver.enableJavascript": true,
-  "prettier.tslintIntegration": true,
+  "prettier.tslintIntegration": false,
   "prettier.resolveGlobalModules": true,
-  "prettier.eslintIntegration": true,
+  "prettier.eslintIntegration": false,
   "diagnostic.enableSign": true,
   "ltex.java.path": "~/.nix-profile/",
   "tslint": {
     "enable": true,
     "run": "onSave",
     "autoFixOnSave": true,
-    "filetypes": ["typescript"]
+    "filetypes": ["typescript", "typescriptreact"]
   },
   "eslint": {
     "enable": true,
     "run": "onSave",
     "autoFixOnSave": true,
-    "filetypes": ["javascript", "typescript"]
+    "filetypes": ["javascript", "javascriptreact"]
   },
   "languageserver": {
     "clojure-lsp": {
@@ -149,11 +149,16 @@
   "cSpell.language": "en-GB",
   "cSpell.userWords": [
     "DBUI",
+    "MMSI",
+    "Millis",
     "SAFELISTING",
     "Suppl",
     "VERCEL",
+    "Workitem",
+    "aisstream",
     "apexcharts",
     "arara",
+    "avif",
     "backoffice",
     "biblatex",
     "bibtex",
@@ -161,6 +166,7 @@
     "datetime",
     "distrib",
     "errorstopmode",
+    "ffprobe",
     "fontawesome",
     "fortawesome",
     "glsdefs",
@@ -168,6 +174,7 @@
     "homoscedasticity",
     "kinto",
     "maizzle",
+    "mapbox",
     "markboth",
     "markdownlint",
     "pdflatex",
@@ -177,8 +184,14 @@
     "singlelinecheck",
     "synctex",
     "tailwindcss",
+    "togeojson",
+    "topright",
+    "trackplayback",
     "unbiasness",
     "webcomponents",
     "xaxis"
-  ]
+  ],
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  }
 }

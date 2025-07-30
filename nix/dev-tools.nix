@@ -21,13 +21,14 @@
     pinentry
     pinentry-curses
     bat
-    thefuck
+    # thefuck
+    pay-respects
     ripgrep
     fzf
-    nerdfonts
+    nerd-fonts.hasklug
     nodejs
     yarn
-    python3
+    # python3
     git-standup
     elmPackages.elm-language-server
     nodePackages.typescript
@@ -41,6 +42,7 @@
     pixelorama
     tailscale
     ncdu
+    ntfs3g
     ngrok
   ];
 
@@ -77,13 +79,4 @@
     };
   };
 
-  programs._1password.enable = true;
-  programs._1password-gui = {
-    enable = true;
-    polkitPolicyOwners = [ "leojpod" ];
-  };
-  services.tailscale = {
-    enable = true;
-    port = 0;
-  };
 }

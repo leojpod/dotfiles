@@ -18,11 +18,12 @@
   nixpkgs.config.permittedInsecurePackages = [
     "electron-9.4.4"
     "qtwebkit-5.212.0-alpha4"
-    "python-2.7.18.6"
+    "googleearth-pro-7.3.4.8248"
   ];
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
+  nixpkgs.config.allowBroken = true;
 
   # power tuning
   powerManagement = {
@@ -80,9 +81,9 @@
   services.xserver.desktopManager.gnome.enable = true;
 
   # Configure keymap in X11
-  services.xserver = {
+  services.xserver.xkb = {
     layout = "us";
-    xkbVariant = "intl";
+    variant = "intl";
   };
 
   # Configure console keymap
@@ -90,10 +91,14 @@
 
   # Enable CUPS to print documents.
   services.printing.enable = true;
+  services.avahi = {
+    enable = true;
+    nssmdns4 = true;
+    openFirewall = true;
+  };
 
   # Enable sound with pipewire.
-  sound.enable = true;
-  hardware.pulseaudio.enable = false;
+  services.pulseaudio.enable = false;
   security.rtkit.enable = true;
   services.pipewire = {
     enable = true;
@@ -115,7 +120,7 @@
   users.users.leojpod = {
     isNormalUser = true;
     description = "Léo";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "vboxusers" ];
   };
 
 
@@ -134,10 +139,10 @@
 
   # Open ports in the firewall.
   networking.firewall = {
-    trustedInterfaces = [ "tailscale0" ];
+    # trustedInterfaces = [ "tailscale0" ];
     allowedTCPPortRanges = [{ from = 22; to = 443; }];
     allowedTCPPorts = [ 3000 1234 ];
-    allowedUDPPorts = [ config.services.tailscale.port ];
+    # allowedUDPPorts = [ config.services.tailscale.port ];
     checkReversePath = "loose";
   };
 

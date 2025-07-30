@@ -1,7 +1,7 @@
 set updatetime=300
 
 " use prettier for formating
-command! -nargs=0 Prettier :CocCommand prettier.formatFile
+" command! -nargs=0 Prettier :CocCommand prettier.formatFile
 
 " use tab and shift-tab to navigate the completion list
 inoremap <silent><expr> <TAB>

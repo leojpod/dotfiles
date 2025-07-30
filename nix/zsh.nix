@@ -36,12 +36,6 @@ let
         zle -N zle-line-init
         zle -N zle-keymap-select
 
-        eval $(thefuck --alias)
-        eval $(thefuck --alias fk)      # a simpler nicer way of swearing
-        eval $(thefuck --alias crap)    # more ways of swearing ...
-        eval $(thefuck --alias shit)
-        eval $(thefuck --alias oh-bum)
-        eval $(thefuck --alias oh-bums)
 
         function who-is-using-this-damn-port() {
           lsof -i :$1;

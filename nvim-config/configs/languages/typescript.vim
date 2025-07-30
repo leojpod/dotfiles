@@ -9,8 +9,8 @@ autocmd QuickFixCmdPost    l* nested lwindow
 autocmd FileType typescript syn clear foldBraces
 
 " tern
-autocmd FileType javascript nnoremap <silent> <buffer> gb :TernDef<CR>
-autocmd FileType typescript nnoremap <silent> <buffer> gb :TernDef<CR>
+" autocmd FileType javascript nnoremap <silent> <buffer> gb :TernDef<CR>
+" autocmd FileType typescript nnoremap <silent> <buffer> gb :TernDef<CR>
 
 "" setup tsuquyomi
 " let g:syntastic_check_on_open = 1
