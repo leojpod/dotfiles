@@ -17,6 +17,7 @@
     git
     cpustat
     niv
+    nix-search
     kitty
     pinentry
     pinentry-curses

@@ -68,6 +68,10 @@ let
 
         alias night-shift='export DAY_NIGHT="NIGHT"; kitty @set-colors ''${KITTY_CONFIG_DIRECTORY:-~/.config/kitty}/night-colors.conf'
         alias day-shift='export DAY_NIGHT="DAY"; kitty @set-colors ''${KITTY_CONFIG_DIRECTORY:-~/.config/kitty}/day-colors.conf'
+
+
+        # pay-respects stuff
+        eval "$(pay-respects zsh)"
         '';
 in
 {
