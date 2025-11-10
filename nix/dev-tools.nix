@@ -41,10 +41,11 @@
     wget
     xclip
     pixelorama
-    tailscale
+    # tailscale
     ncdu
     ntfs3g
     ngrok
+    ffmpeg
   ];
 
   home-manager.users.leojpod.programs.sqls.enable = true;

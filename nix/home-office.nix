@@ -40,15 +40,15 @@
 
     # video editors
     # TODO keep only 1 or 2
-    pitivi
-    # shotcut
-    olive-editor
-    kdePackages.kdenlive
+    # pitivi --> bit too simplistic
+    # shotcut --> bit too simplistic
+    # olive-editor --> work but unstable 
+    kdePackages.kdenlive # -> works!
     gnome-video-effects
     ffmpeg
     # cinelerra
     # davinci-resolve
-    # davinci-resolve-studio
+    davinci-resolve-studio
 
     sushi
     clapper
@@ -64,7 +64,6 @@
     timidity
     soundfont-fluid
 
-    musescore
 
     # for when latex/R isn't an option
     libreoffice
